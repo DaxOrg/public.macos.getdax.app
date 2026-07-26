@@ -3,12 +3,12 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.18.0</title>
-            <pubDate>Sat, 25 Jul 2026 12:53:37 -0700</pubDate>
-            <sparkle:version>212</sparkle:version>
-            <sparkle:shortVersionString>2.18.0</sparkle:shortVersionString>
+            <title>2.19.0</title>
+            <pubDate>Sat, 25 Jul 2026 23:20:02 -0700</pubDate>
+            <sparkle:version>213</sparkle:version>
+            <sparkle:shortVersionString>2.19.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.18.0/Dax.zip" length="10812442" type="application/octet-stream" sparkle:edSignature="z578BgLO6eethkOOV6/e1Ebkqs/ji6Tr4yrQuaFNmfdve4cf6X1MWixEpH3SMRu1ZrZJe9FqNTjwXS1mlaGwCQ=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.19.0/Dax.zip" length="10810797" type="application/octet-stream" sparkle:edSignature="Thonz7QRlZk7zjQ6Yk+FnUGLa5FLJ3bSh6yFQYbXRUUcdml12zaNqoRNSLF76+761+7Ji+zn1s4hXPmnk/p/BQ=="/>
         </item>
     </channel>
 </rss>
