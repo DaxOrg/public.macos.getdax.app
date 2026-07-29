@@ -3,12 +3,35 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.22.0</title>
-            <pubDate>Sun, 26 Jul 2026 11:21:27 -0700</pubDate>
-            <sparkle:version>216</sparkle:version>
-            <sparkle:shortVersionString>2.22.0</sparkle:shortVersionString>
+            <title>2.23.0</title>
+            <pubDate>Tue, 28 Jul 2026 17:05:19 -0700</pubDate>
+            <sparkle:version>217</sparkle:version>
+            <sparkle:shortVersionString>2.23.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.22.0/Dax.zip" length="10819570" type="application/octet-stream" sparkle:edSignature="4HLmw+zfSut9k6tNzdlq3jRorJhrYTTDy7Fb4Zn8QxU3BMY+gD4ldPElMB/kBQEYZTQ0Mc0bBx9gn3LWo8uPBA=="/>
+            <description><![CDATA[<!DOCTYPE html>
+<html>
+<body style="font-family: -apple-system, sans-serif; font-size: 13px;">
+<h2>What's new in 2.23.0</h2>
+<p>A new local tool for your shell history, plus stickier answer dialogs.</p>
+<h3>New: Command History <code>⌃⌥Y</code></h3>
+<ul>
+  <li><b>Every command you've run, fuzzy-searchable.</b> Reads your shell history (zsh, bash, fish, sh, ksh, tcsh) — 100% local and read-only, nothing ever leaves your Mac. The commands you use most lead before you type a thing.</li>
+  <li><b>Pick what <code>↩</code> does, live.</b> A toggle in the palette (or <code>⌘T</code>) switches between <b>Insert</b> into the focused terminal, open in a <b>New Terminal</b>, or <b>Copy</b> — remembered between sessions. <code>⌘↩</code> inserts and runs; <code>⌘C</code> always copies.</li>
+  <li><b>Tune what shows.</b> A "Start with" prefix seeds the search bar (backspace it to widen), an exclude list hides throwaway commands (ls, cd, clear…), and a filter regex keeps only real <i>command + arguments</i> lines by default. Near-duplicates are merged.</li>
+  <li><b>Safe by default.</b> Destructive-looking commands (rm -rf, sudo, dd…) are inserted for review but never auto-run.</li>
+</ul>
+<h3>Stickier answers</h3>
+<ul>
+  <li><b>Ask AI &amp; Image Ask stay open</b> until you close them — <code>esc</code> or the close button. No more losing an answer to a stray click.</li>
+</ul>
+<h3>Polish</h3>
+<ul>
+  <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
+</ul>
+</body>
+</html>
+]]></description>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.23.0/Dax.zip" length="11070552" type="application/octet-stream" sparkle:edSignature="+1wa2OoLi9EvAmyI5SLb1WjlzZ9SrxiRiB7FO7Ul6ULbbgCtjUYqZKJycnMsNmQppbMw1GsykqsiJJJU1BrNDQ=="/>
         </item>
     </channel>
 </rss>
