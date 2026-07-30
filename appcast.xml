@@ -3,35 +3,50 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.23.0</title>
-            <pubDate>Tue, 28 Jul 2026 17:05:19 -0700</pubDate>
-            <sparkle:version>217</sparkle:version>
-            <sparkle:shortVersionString>2.23.0</sparkle:shortVersionString>
+            <title>2.24.0</title>
+            <pubDate>Thu, 30 Jul 2026 14:58:51 -0700</pubDate>
+            <sparkle:version>218</sparkle:version>
+            <sparkle:shortVersionString>2.24.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.23.0</h2>
-<p>A new local tool for your shell history, plus stickier answer dialogs.</p>
-<h3>New: Command History <code>⌃⌥Y</code></h3>
+<h2>What's new in 2.24.0</h2>
+<p>Three new tools — share secrets with an agent safely, fill forms from your own context, and fan a whole dev setup across your screen — plus a fix for notched Macs.</p>
+
+<h3>New: Secrets <code>⌃⌥V</code></h3>
 <ul>
-  <li><b>Every command you've run, fuzzy-searchable.</b> Reads your shell history (zsh, bash, fish, sh, ksh, tcsh) — 100% local and read-only, nothing ever leaves your Mac. The commands you use most lead before you type a thing.</li>
-  <li><b>Pick what <code>↩</code> does, live.</b> A toggle in the palette (or <code>⌘T</code>) switches between <b>Insert</b> into the focused terminal, open in a <b>New Terminal</b>, or <b>Copy</b> — remembered between sessions. <code>⌘↩</code> inserts and runs; <code>⌘C</code> always copies.</li>
-  <li><b>Tune what shows.</b> A "Start with" prefix seeds the search bar (backspace it to widen), an exclude list hides throwaway commands (ls, cd, clear…), and a filter regex keeps only real <i>command + arguments</i> lines by default. Near-duplicates are merged.</li>
-  <li><b>Safe by default.</b> Destructive-looking commands (rm -rf, sudo, dd…) are inserted for review but never auto-run.</li>
+  <li><b>Hand an API key to a coding agent without ever pasting it into the chat.</b> Store the secret once (it lives in your Keychain), and Dax gives you a one-line <code>dax run --secret …</code> to hand the agent. When it needs the value, the local broker asks you to approve, then injects it into just that one command — never printed, never in the conversation.</li>
 </ul>
-<h3>Stickier answers</h3>
+
+<h3>New: Context Fill <code>⌃⌥X</code></h3>
 <ul>
-  <li><b>Ask AI &amp; Image Ask stay open</b> until you close them — <code>esc</code> or the close button. No more losing an answer to a stray click.</li>
+  <li><b>Filling out a form? Snip the question, get a paste-ready answer.</b> Build a Context Pack once — résumé, docs, links — then snip any question on screen and Dax answers it from your own information. Snip several and it answers each.</li>
+  <li><b>It adapts.</b> No exact match? It makes a sensible, labelled guess instead of a blank. Refine any answer with a follow-up, and edit-and-remember folds your correction back into the pack so it's right next time. Press <code>E</code> mid-snip to switch packs.</li>
 </ul>
+
+<h3>New: Fanout <code>⌃⌥D</code></h3>
+<ul>
+  <li><b>One profile, a whole dev setup.</b> Add the repos you work on together, hit <code>⌃⌥D</code>, and Dax opens a terminal in each with your agent running — tiled side by side. Works with Terminal and iTerm2, with per-repo command overrides, YOLO, and optional folder-trust skip.</li>
+</ul>
+
+<h3>Notch-friendly</h3>
+<ul>
+  <li><b>Menu-bar icon hidden behind the notch?</b> New <b>Show icon in the Dock</b> option in Settings → General gives you a notch-proof way in, and a one-time tip points the way. You can always summon Dax with <code>⌃⌥Space</code>.</li>
+</ul>
+
 <h3>Polish</h3>
 <ul>
+  <li><b>Image to URL:</b> press <code>⇥</code> on the result to switch between copying the link and the image, with a longer window to decide.</li>
+  <li><b>Frequent CLIs:</b> press <code>⇥</code> to switch between typing a command and opening it in a fresh terminal (in a folder you choose); optional skip of Claude's folder-trust prompt on YOLO launches.</li>
+  <li><b>Generate Image:</b> press <code>⌘⇧S</code> to snip a region of your screen straight into the prompt.</li>
+  <li><b>Boilerplates:</b> share a template as a single <code>.daxel</code> file — double-click to install it.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.23.0/Dax.zip" length="11070552" type="application/octet-stream" sparkle:edSignature="+1wa2OoLi9EvAmyI5SLb1WjlzZ9SrxiRiB7FO7Ul6ULbbgCtjUYqZKJycnMsNmQppbMw1GsykqsiJJJU1BrNDQ=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.24.0/Dax.zip" length="12287396" type="application/octet-stream" sparkle:edSignature="moTxH3EmqgoOfdl2Pgowt7Sioa4NhBQHoPovfvRK/7hrqd5SRA6iDgK4q9KvY5lAX15NNH6JKZQJ3xisoeAbDA=="/>
         </item>
     </channel>
 </rss>
