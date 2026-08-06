@@ -3,56 +3,37 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.26.0</title>
-            <pubDate>Wed, 05 Aug 2026 21:02:06 -0700</pubDate>
-            <sparkle:version>220</sparkle:version>
-            <sparkle:shortVersionString>2.26.0</sparkle:shortVersionString>
+            <title>2.27.0</title>
+            <pubDate>Thu, 06 Aug 2026 02:14:07 -0700</pubDate>
+            <sparkle:version>221</sparkle:version>
+            <sparkle:shortVersionString>2.27.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.26.0</h2>
-<p>Bring your own API key, sign yourself up without an invite, and get back in with one tap when you return — plus a full-screen image viewer and a pile of polish.</p>
+<h2>What's new in 2.27.0</h2>
+<p>Your profile photo now keeps itself in sync wherever you signed in, and full screen is one click away on every image you generate.</p>
 
-<h3>Bring your own key</h3>
+<h3>Full screen, right on the image <code>⌘F</code></h3>
 <ul>
-  <li><b>Use Dax with your own API key.</b> Switch to BYOK in Settings → General, paste a key, and the AI tools run against your account with no server quota in the way. Managed stays the default — switch back whenever you like.</li>
-  <li><b>Sign yourself up.</b> No invite code needed to get started anymore; onboarding walks you through it.</li>
+  <li><b>A Full Screen button now sits on the image itself.</b> It fades in on the top-right corner once your image finishes developing, and brightens as you point at it. <code>⌘F</code> still works exactly as before — the button just makes it easy to find.</li>
 </ul>
 
-<h3>Coming back to Dax</h3>
+<h3>Profile photos that stay current</h3>
 <ul>
-  <li><b>One tap to sign back in.</b> A returning account sees its own avatar, name, and a single <b>Send me a code</b> button — no door picker, no retyping your email. Escape hatches for a code you already have, or a different account entirely.</li>
-  <li><b>A proper welcome back.</b> The toast greets you by name with your photo, and re-signing in skips onboarding you've already done.</li>
+  <li><b>Change your photo on another device and it arrives here.</b> Dax now checks for a new photo as it refreshes your session, so Settings shows the current one without a manual refresh.</li>
+  <li><b>Fixed your photo reverting to an older one after signing out and back in.</b> Dax was holding on to the first photo it ever saw for your account instead of the one you have now.</li>
+  <li><b>Fixed a missing photo staying missing.</b> If a download didn't go through, Dax kept your last known photo and now tries again on the next refresh rather than giving up.</li>
 </ul>
 
-<h3>Full-screen images <code>⌘F</code></h3>
+<h3>Also in this release</h3>
 <ul>
-  <li><b>Press <code>⌘F</code> on a generated image</b> to blow it up full screen — pinch to zoom, jump to actual size for a 1:1 pixel look, and see the real dimensions at the bottom.</li>
-</ul>
-
-<h3>Profile &amp; account</h3>
-<ul>
-  <li><b>Real profile photos.</b> Pick one properly, and it sticks with you — even through a log out.</li>
-  <li><b>See what Pro buys you.</b> The upgrade pitch now leads with the reason and lives in a window of its own, with working buttons throughout.</li>
-</ul>
-
-<h3>Polish</h3>
-<ul>
-  <li><b>Open Project:</b> press <code>⇧⇥</code> to cycle through agents right in the palette.</li>
-  <li><b>Setup Assistant</b> has a shortcut of its own — <code>⌃⌥0</code>.</li>
-  <li><b>Frequent CLIs:</b> <code>kimi --yolo</code> ships as a stock entry.</li>
-  <li><b>Toasts</b> got a real settings page, and always appear where you expect.</li>
-  <li><b>Big uploads:</b> File Drop now waits long enough for a 1&nbsp;GB file, and image uploads no longer time out early.</li>
-  <li>The menu-bar icon parks itself at the far right of the third-party region.</li>
-  <li>Fixed Settings showing "Not signed in" right after you signed in.</li>
-  <li>Fixed a handful of crashes from unsafe unwraps and array access.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.26.0/Dax.zip" length="14431680" type="application/octet-stream" sparkle:edSignature="gYVrflVj511QgcQ5GOFgtpM/NpiyfiaoemjF509hez/Pxxy4l3Ha6/zV/IzneR+Jg6Xl93trp5zk1HxjluXQCA=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.27.0/Dax.zip" length="14456108" type="application/octet-stream" sparkle:edSignature="oNkkvQFEIt9g9jxdJoPfECk2J5uCkhJGNqVrvp1vOPb4I1LA9F1Lb3cACLzen9tvSEjTJk+/SKo9/uNLOVKhCg=="/>
         </item>
     </channel>
 </rss>
