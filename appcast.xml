@@ -3,27 +3,20 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.27.0</title>
-            <pubDate>Thu, 06 Aug 2026 02:14:07 -0700</pubDate>
-            <sparkle:version>221</sparkle:version>
-            <sparkle:shortVersionString>2.27.0</sparkle:shortVersionString>
+            <title>2.27.1</title>
+            <pubDate>Thu, 06 Aug 2026 09:56:57 -0700</pubDate>
+            <sparkle:version>222</sparkle:version>
+            <sparkle:shortVersionString>2.27.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.27.0</h2>
-<p>Your profile photo now keeps itself in sync wherever you signed in, and full screen is one click away on every image you generate.</p>
+<h2>What's new in 2.27.1</h2>
+<p>A privacy fix for profile photos.</p>
 
-<h3>Full screen, right on the image <code>⌘F</code></h3>
+<h3>Profile photos no longer carry hidden metadata</h3>
 <ul>
-  <li><b>A Full Screen button now sits on the image itself.</b> It fades in on the top-right corner once your image finishes developing, and brightens as you point at it. <code>⌘F</code> still works exactly as before — the button just makes it easy to find.</li>
-</ul>
-
-<h3>Profile photos that stay current</h3>
-<ul>
-  <li><b>Change your photo on another device and it arrives here.</b> Dax now checks for a new photo as it refreshes your session, so Settings shows the current one without a manual refresh.</li>
-  <li><b>Fixed your photo reverting to an older one after signing out and back in.</b> Dax was holding on to the first photo it ever saw for your account instead of the one you have now.</li>
-  <li><b>Fixed a missing photo staying missing.</b> If a download didn't go through, Dax kept your last known photo and now tries again on the next refresh rather than giving up.</li>
+  <li><b>Photos you upload are stripped of their embedded metadata.</b> A photo straight from your camera or phone can carry the location it was taken, the device that took it, and the exact time. Dax now re-renders every profile photo before it leaves your Mac, so none of that goes along with it.</li>
 </ul>
 
 <h3>Also in this release</h3>
@@ -33,7 +26,7 @@
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.27.0/Dax.zip" length="14456108" type="application/octet-stream" sparkle:edSignature="oNkkvQFEIt9g9jxdJoPfECk2J5uCkhJGNqVrvp1vOPb4I1LA9F1Lb3cACLzen9tvSEjTJk+/SKo9/uNLOVKhCg=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.27.1/Dax.zip" length="14456960" type="application/octet-stream" sparkle:edSignature="TsoeHqCs2cUtOt0tstodJ23Sj04WprlUjNHG/Z+R/m20kL/+tYEiIFETxv9tavC4RM4x8vPcyNx5jY3nO+8+Cw=="/>
         </item>
     </channel>
 </rss>
