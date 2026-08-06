@@ -3,50 +3,56 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.24.0</title>
-            <pubDate>Thu, 30 Jul 2026 14:58:51 -0700</pubDate>
-            <sparkle:version>218</sparkle:version>
-            <sparkle:shortVersionString>2.24.0</sparkle:shortVersionString>
+            <title>2.26.0</title>
+            <pubDate>Wed, 05 Aug 2026 21:02:06 -0700</pubDate>
+            <sparkle:version>220</sparkle:version>
+            <sparkle:shortVersionString>2.26.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.24.0</h2>
-<p>Three new tools — share secrets with an agent safely, fill forms from your own context, and fan a whole dev setup across your screen — plus a fix for notched Macs.</p>
+<h2>What's new in 2.26.0</h2>
+<p>Bring your own API key, sign yourself up without an invite, and get back in with one tap when you return — plus a full-screen image viewer and a pile of polish.</p>
 
-<h3>New: Secrets <code>⌃⌥V</code></h3>
+<h3>Bring your own key</h3>
 <ul>
-  <li><b>Hand an API key to a coding agent without ever pasting it into the chat.</b> Store the secret once (it lives in your Keychain), and Dax gives you a one-line <code>dax run --secret …</code> to hand the agent. When it needs the value, the local broker asks you to approve, then injects it into just that one command — never printed, never in the conversation.</li>
+  <li><b>Use Dax with your own API key.</b> Switch to BYOK in Settings → General, paste a key, and the AI tools run against your account with no server quota in the way. Managed stays the default — switch back whenever you like.</li>
+  <li><b>Sign yourself up.</b> No invite code needed to get started anymore; onboarding walks you through it.</li>
 </ul>
 
-<h3>New: Context Fill <code>⌃⌥X</code></h3>
+<h3>Coming back to Dax</h3>
 <ul>
-  <li><b>Filling out a form? Snip the question, get a paste-ready answer.</b> Build a Context Pack once — résumé, docs, links — then snip any question on screen and Dax answers it from your own information. Snip several and it answers each.</li>
-  <li><b>It adapts.</b> No exact match? It makes a sensible, labelled guess instead of a blank. Refine any answer with a follow-up, and edit-and-remember folds your correction back into the pack so it's right next time. Press <code>E</code> mid-snip to switch packs.</li>
+  <li><b>One tap to sign back in.</b> A returning account sees its own avatar, name, and a single <b>Send me a code</b> button — no door picker, no retyping your email. Escape hatches for a code you already have, or a different account entirely.</li>
+  <li><b>A proper welcome back.</b> The toast greets you by name with your photo, and re-signing in skips onboarding you've already done.</li>
 </ul>
 
-<h3>New: Fanout <code>⌃⌥D</code></h3>
+<h3>Full-screen images <code>⌘F</code></h3>
 <ul>
-  <li><b>One profile, a whole dev setup.</b> Add the repos you work on together, hit <code>⌃⌥D</code>, and Dax opens a terminal in each with your agent running — tiled side by side. Works with Terminal and iTerm2, with per-repo command overrides, YOLO, and optional folder-trust skip.</li>
+  <li><b>Press <code>⌘F</code> on a generated image</b> to blow it up full screen — pinch to zoom, jump to actual size for a 1:1 pixel look, and see the real dimensions at the bottom.</li>
 </ul>
 
-<h3>Notch-friendly</h3>
+<h3>Profile &amp; account</h3>
 <ul>
-  <li><b>Menu-bar icon hidden behind the notch?</b> New <b>Show icon in the Dock</b> option in Settings → General gives you a notch-proof way in, and a one-time tip points the way. You can always summon Dax with <code>⌃⌥Space</code>.</li>
+  <li><b>Real profile photos.</b> Pick one properly, and it sticks with you — even through a log out.</li>
+  <li><b>See what Pro buys you.</b> The upgrade pitch now leads with the reason and lives in a window of its own, with working buttons throughout.</li>
 </ul>
 
 <h3>Polish</h3>
 <ul>
-  <li><b>Image to URL:</b> press <code>⇥</code> on the result to switch between copying the link and the image, with a longer window to decide.</li>
-  <li><b>Frequent CLIs:</b> press <code>⇥</code> to switch between typing a command and opening it in a fresh terminal (in a folder you choose); optional skip of Claude's folder-trust prompt on YOLO launches.</li>
-  <li><b>Generate Image:</b> press <code>⌘⇧S</code> to snip a region of your screen straight into the prompt.</li>
-  <li><b>Boilerplates:</b> share a template as a single <code>.daxel</code> file — double-click to install it.</li>
+  <li><b>Open Project:</b> press <code>⇧⇥</code> to cycle through agents right in the palette.</li>
+  <li><b>Setup Assistant</b> has a shortcut of its own — <code>⌃⌥0</code>.</li>
+  <li><b>Frequent CLIs:</b> <code>kimi --yolo</code> ships as a stock entry.</li>
+  <li><b>Toasts</b> got a real settings page, and always appear where you expect.</li>
+  <li><b>Big uploads:</b> File Drop now waits long enough for a 1&nbsp;GB file, and image uploads no longer time out early.</li>
+  <li>The menu-bar icon parks itself at the far right of the third-party region.</li>
+  <li>Fixed Settings showing "Not signed in" right after you signed in.</li>
+  <li>Fixed a handful of crashes from unsafe unwraps and array access.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.24.0/Dax.zip" length="12287396" type="application/octet-stream" sparkle:edSignature="moTxH3EmqgoOfdl2Pgowt7Sioa4NhBQHoPovfvRK/7hrqd5SRA6iDgK4q9KvY5lAX15NNH6JKZQJ3xisoeAbDA=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.26.0/Dax.zip" length="14431680" type="application/octet-stream" sparkle:edSignature="gYVrflVj511QgcQ5GOFgtpM/NpiyfiaoemjF509hez/Pxxy4l3Ha6/zV/IzneR+Jg6Xl93trp5zk1HxjluXQCA=="/>
         </item>
     </channel>
 </rss>
