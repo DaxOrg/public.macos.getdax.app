@@ -3,30 +3,49 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.27.1</title>
-            <pubDate>Thu, 06 Aug 2026 09:56:57 -0700</pubDate>
-            <sparkle:version>222</sparkle:version>
-            <sparkle:shortVersionString>2.27.1</sparkle:shortVersionString>
+            <title>2.28.0</title>
+            <pubDate>Thu, 06 Aug 2026 18:12:05 -0700</pubDate>
+            <sparkle:version>223</sparkle:version>
+            <sparkle:shortVersionString>2.28.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.27.1</h2>
-<p>A privacy fix for profile photos.</p>
+<h2>What's new in 2.28.0</h2>
+<p>Two new tools — a clipboard that remembers and a library of prompts you can summon — plus the ability to draw on a screenshot before it goes anywhere.</p>
 
-<h3>Profile photos no longer carry hidden metadata</h3>
+<h3>Clipboard History <code>⌃⌥C</code></h3>
 <ul>
-  <li><b>Photos you upload are stripped of their embedded metadata.</b> A photo straight from your camera or phone can carry the location it was taken, the device that took it, and the exact time. Dax now re-renders every profile photo before it leaves your Mac, so none of that goes along with it.</li>
+  <li><b>Everything you copy, still there when you need it back.</b> Text, images, and files, searchable, with whatever you've highlighted shown in full beside the list — the picture itself, the whole text, the real Finder icons. <code>↩</code> puts it back on the clipboard, <code>⌘⌫</code> forgets it.</li>
+  <li><b>It knows where things came from.</b> Each entry records the app you copied it from, which is usually the quickest way to spot the one you want.</li>
+  <li><b>Your history stays on your Mac.</b> It's never sent anywhere. Copies that password managers mark as concealed are never recorded at all, and Settings lets you pause recording, keep the history only for the current session, or clear it outright.</li>
+  <li><b>A sound when something lands.</b> On by default, with a switch in Settings if you'd rather work in silence.</li>
+</ul>
+
+<h3>Prompt Snippets <code>⌃⌥J</code></h3>
+<ul>
+  <li><b>The prompts you keep retyping, one shortcut away.</b> Type to search, <code>↩</code> to use. <code>⇥</code> switches between copying the snippet and typing it straight into whatever app you were in.</li>
+  <li><b>One comes with Dax.</b> The Preloader Snippet — a complete brief for building a curved-curtain page preloader, ready to hand to a coding agent. Edit it however you like; Dax won't write over a snippet you've changed.</li>
+  <li><b>Your snippets never leave the Mac.</b> Add, edit, and reorder them in Settings.</li>
+</ul>
+
+<h3>Draw on an image before you send it</h3>
+<ul>
+  <li><b>Point at the thing you're talking about.</b> Image to URL, Image Ask, and Image to Prompt can now open your capture in an annotation editor first: arrows, boxes, and text labels you can drag around.</li>
+  <li><b>Off unless you ask for it.</b> Turn it on per tool in Settings — the straight-to-upload path is untouched otherwise. With it on, <code>↩</code> sends immediately if you haven't drawn anything, so skipping is one key.</li>
+  <li><b>Missed your chance? Not really.</b> When an image went out unmarked, the result screen offers to annotate it after the fact and send the marked-up version.</li>
+  <li><b>Built for the keyboard.</b> <code>A</code> arrow, <code>B</code> box, <code>T</code> label, <code>V</code> select, <code>1</code>–<code>7</code> for color, <code>⇧</code> to constrain, <code>⌥</code> to duplicate, and <code>?</code> for the full list.</li>
 </ul>
 
 <h3>Also in this release</h3>
 <ul>
+  <li><b>Open Project's agent presets now offer Claude Code — YOLO</b> in place of resume-last, which reopened whatever session the terminal happened to land in rather than the project you just picked.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.27.1/Dax.zip" length="14456960" type="application/octet-stream" sparkle:edSignature="TsoeHqCs2cUtOt0tstodJ23Sj04WprlUjNHG/Z+R/m20kL/+tYEiIFETxv9tavC4RM4x8vPcyNx5jY3nO+8+Cw=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.28.0/Dax.zip" length="15228319" type="application/octet-stream" sparkle:edSignature="SlkAggnEI244jjQmyFlyCJbKcJ9pDUUEXB/Xg6aZZLnGf4Csi8RSLrzl4g+InBNVxE7/bBqOT+vWqzV4BptPCw=="/>
         </item>
     </channel>
 </rss>
