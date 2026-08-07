@@ -3,49 +3,39 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.28.0</title>
-            <pubDate>Thu, 06 Aug 2026 18:12:05 -0700</pubDate>
-            <sparkle:version>223</sparkle:version>
-            <sparkle:shortVersionString>2.28.0</sparkle:shortVersionString>
+            <title>2.29.0</title>
+            <pubDate>Fri, 07 Aug 2026 14:29:21 -0700</pubDate>
+            <sparkle:version>224</sparkle:version>
+            <sparkle:shortVersionString>2.29.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.28.0</h2>
-<p>Two new tools — a clipboard that remembers and a library of prompts you can summon — plus the ability to draw on a screenshot before it goes anywhere.</p>
+<h2>What's new in 2.29.0</h2>
+<p>One new tool: Agent Watch, which keeps an eye on the Claude Code sessions you have running so you don't have to sit and watch them — and gives each one a character you'll come to recognise.</p>
 
-<h3>Clipboard History <code>⌃⌥C</code></h3>
+<h3>Agent Watch <code>⌃⌥M</code></h3>
 <ul>
-  <li><b>Everything you copy, still there when you need it back.</b> Text, images, and files, searchable, with whatever you've highlighted shown in full beside the list — the picture itself, the whole text, the real Finder icons. <code>↩</code> puts it back on the clipboard, <code>⌘⌫</code> forgets it.</li>
-  <li><b>It knows where things came from.</b> Each entry records the app you copied it from, which is usually the quickest way to spot the one you want.</li>
-  <li><b>Your history stays on your Mac.</b> It's never sent anywhere. Copies that password managers mark as concealed are never recorded at all, and Settings lets you pause recording, keep the history only for the current session, or clear it outright.</li>
-  <li><b>A sound when something lands.</b> On by default, with a switch in Settings if you'd rather work in silence.</li>
-</ul>
-
-<h3>Prompt Snippets <code>⌃⌥J</code></h3>
-<ul>
-  <li><b>The prompts you keep retyping, one shortcut away.</b> Type to search, <code>↩</code> to use. <code>⇥</code> switches between copying the snippet and typing it straight into whatever app you were in.</li>
-  <li><b>One comes with Dax.</b> The Preloader Snippet — a complete brief for building a curved-curtain page preloader, ready to hand to a coding agent. Edit it however you like; Dax won't write over a snippet you've changed.</li>
-  <li><b>Your snippets never leave the Mac.</b> Add, edit, and reorder them in Settings.</li>
-</ul>
-
-<h3>Draw on an image before you send it</h3>
-<ul>
-  <li><b>Point at the thing you're talking about.</b> Image to URL, Image Ask, and Image to Prompt can now open your capture in an annotation editor first: arrows, boxes, and text labels you can drag around.</li>
-  <li><b>Off unless you ask for it.</b> Turn it on per tool in Settings — the straight-to-upload path is untouched otherwise. With it on, <code>↩</code> sends immediately if you haven't drawn anything, so skipping is one key.</li>
-  <li><b>Missed your chance? Not really.</b> When an image went out unmarked, the result screen offers to annotate it after the fact and send the marked-up version.</li>
-  <li><b>Built for the keyboard.</b> <code>A</code> arrow, <code>B</code> box, <code>T</code> label, <code>V</code> select, <code>1</code>–<code>7</code> for color, <code>⇧</code> to constrain, <code>⌥</code> to duplicate, and <code>?</code> for the full list.</li>
+  <li><b>Every session you have running, in one panel.</b> The project, the last thing the agent said, and what it's doing right now — the ones wanting your attention first. Type to search by project or title.</li>
+  <li><b>A character for every session.</b> Twenty-one little pixel animals, one per project, and never the same one twice on screen. They walk while an agent is working, shuffle about when one wants an answer, and stand still when it's done — so you can read a whole panel of them without reading a word. Click any of them in Settings to meet it.</li>
+  <li><b>Status at a glance.</b> A green light for working, yellow for a session that needs you, grey for one at rest, with the state in words and how long it's been that way counting up beside it.</li>
+  <li><b>It taps you on the shoulder.</b> A notification when a turn finishes, and when a session has been sitting on a permission prompt long enough that it's clearly waiting for you. Optionally in plain language, summarised on-device by Apple Intelligence.</li>
+  <li><b>Answer without leaving what you're doing.</b> Type a reply straight into the notification and Dax puts it in the exact terminal tab that asked — Terminal, iTerm, or Ghostty. If it can't find the tab for certain, it says so and leaves your answer on the clipboard rather than typing it somewhere else.</li>
+  <li><b>Click to go to it.</b> The whole card is the button. Dax finds the tab running that session and brings it to the front, following it to another Desktop if that's where it lives.</li>
+  <li><b>Close the terminal and the session leaves the list.</b> What's listed is what's running — Dax checks for the agent process itself rather than trusting a file that outlives the session that wrote it.</li>
+  <li><b>Hooks, if you want them.</b> Claude Code can tell Dax outright when it needs you instead of Dax working it out from the trace. Two entries in <code>~/.claude/settings.json</code>, added and removed from Settings, backed up first.</li>
+  <li><b>All of it on your Mac.</b> Agent Watch reads the session files already on disk and never touches the network.</li>
 </ul>
 
 <h3>Also in this release</h3>
 <ul>
-  <li><b>Open Project's agent presets now offer Claude Code — YOLO</b> in place of resume-last, which reopened whatever session the terminal happened to land in rather than the project you just picked.</li>
+  <li><b>Open Project's toast now shows what you actually opened.</b> The agent's own logo when you started Claude Code, Codex, Kimi, or Gemini, and a folder when you opened a folder — instead of the same window icon for everything.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.28.0/Dax.zip" length="15228319" type="application/octet-stream" sparkle:edSignature="SlkAggnEI244jjQmyFlyCJbKcJ9pDUUEXB/Xg6aZZLnGf4Csi8RSLrzl4g+InBNVxE7/bBqOT+vWqzV4BptPCw=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.29.0/Dax.zip" length="15654163" type="application/octet-stream" sparkle:edSignature="17ltQ/O/knDe6OmXBj92Y6BRIXP24DQvspJeSUYLPGDzsQ1QyOKF45fII1il3IM+O53xR/bTGgIZDu9T98j6CQ=="/>
         </item>
     </channel>
 </rss>
