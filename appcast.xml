@@ -3,39 +3,60 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.29.0</title>
-            <pubDate>Fri, 07 Aug 2026 14:29:21 -0700</pubDate>
-            <sparkle:version>224</sparkle:version>
-            <sparkle:shortVersionString>2.29.0</sparkle:shortVersionString>
+            <title>2.30.0</title>
+            <pubDate>Fri, 07 Aug 2026 19:29:18 -0700</pubDate>
+            <sparkle:version>225</sparkle:version>
+            <sparkle:shortVersionString>2.30.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.29.0</h2>
-<p>One new tool: Agent Watch, which keeps an eye on the Claude Code sessions you have running so you don't have to sit and watch them — and gives each one a character you'll come to recognise.</p>
+<h2>What's new in 2.30.0</h2>
+<p>The menu shows every tool at once, Agent Watch can tell your sessions apart, and the images you feed the tools are kept where you can find them again.</p>
+
+<h3>The menu bar shows everything</h3>
+<ul>
+  <li><b>Every tool on one screenful.</b> Three columns instead of one long scrolling list — you open a menu to <i>find</i> something, and a list you have to scroll can't be scanned. Nothing is a gesture away any more.</li>
+  <li><b>It fits your screen.</b> On a narrower display it drops to two columns, or one, and grows taller instead of running off the edge.</li>
+  <li><b>Signed out, it asks you to sign in</b> rather than listing twenty-two tools that can't run until you have.</li>
+</ul>
 
 <h3>Agent Watch <code>⌃⌥M</code></h3>
 <ul>
-  <li><b>Every session you have running, in one panel.</b> The project, the last thing the agent said, and what it's doing right now — the ones wanting your attention first. Type to search by project or title.</li>
-  <li><b>A character for every session.</b> Twenty-one little pixel animals, one per project, and never the same one twice on screen. They walk while an agent is working, shuffle about when one wants an answer, and stand still when it's done — so you can read a whole panel of them without reading a word. Click any of them in Settings to meet it.</li>
-  <li><b>Status at a glance.</b> A green light for working, yellow for a session that needs you, grey for one at rest, with the state in words and how long it's been that way counting up beside it.</li>
-  <li><b>It taps you on the shoulder.</b> A notification when a turn finishes, and when a session has been sitting on a permission prompt long enough that it's clearly waiting for you. Optionally in plain language, summarised on-device by Apple Intelligence.</li>
-  <li><b>Answer without leaving what you're doing.</b> Type a reply straight into the notification and Dax puts it in the exact terminal tab that asked — Terminal, iTerm, or Ghostty. If it can't find the tab for certain, it says so and leaves your answer on the clipboard rather than typing it somewhere else.</li>
-  <li><b>Click to go to it.</b> The whole card is the button. Dax finds the tab running that session and brings it to the front, following it to another Desktop if that's where it lives.</li>
-  <li><b>Close the terminal and the session leaves the list.</b> What's listed is what's running — Dax checks for the agent process itself rather than trusting a file that outlives the session that wrote it.</li>
-  <li><b>Hooks, if you want them.</b> Claude Code can tell Dax outright when it needs you instead of Dax working it out from the trace. Two entries in <code>~/.claude/settings.json</code>, added and removed from Settings, backed up first.</li>
-  <li><b>All of it on your Mac.</b> Agent Watch reads the session files already on disk and never touches the network.</li>
+  <li><b>Every session gets its own character.</b> Two agents in one repo used to draw the same animal; now no two sessions on screen are ever alike, and sessions sharing a folder are numbered — Dax 1, Dax 2 — on the corner of their avatar and in their name.</li>
+  <li><b>Only what's actually running.</b> Close a terminal and its session leaves the list within seconds. Dax looks for the agent process itself now, instead of trusting a file that outlives the session that wrote it.</li>
+  <li><b>Status at a glance.</b> A green light for working, yellow for a session that needs you, grey for one at rest — with the state in words and how long it's been that way counting up beside it. A resting session's animal stands still.</li>
+  <li><b>It brings up the right terminal.</b> Selecting a session raises the tab actually running it, even when two sessions share a folder.</li>
+</ul>
+
+<h3>Dax Shots</h3>
+<ul>
+  <li><b>The images you use are kept.</b> Image to URL, Image Ask, Image to Prompt and Image to Text now save every picture you hand them to <code>~/Pictures/Dax&nbsp;Shots</code>, one folder per tool, named the way macOS names screenshots. These tools give you back a link or an answer; the picture itself used to be nowhere you could go and look for it.</li>
+</ul>
+
+<h3>Clipboard History <code>⌃⌥C</code></h3>
+<ul>
+  <li><b>A quiet signal instead of a chime.</b> The menu bar icon becomes a downward arrow for a moment when something is copied. The sound is off by default now — turn it back on in Settings if you liked it.</li>
+</ul>
+
+<h3>Signing up</h3>
+<ul>
+  <li><b>The photo is its own step, and you can skip it.</b> It used to sit above the name and email fields, where the one optional thing on the screen looked like one of the required ones.</li>
+  <li><b>The welcome screen lets go by itself.</b> A short countdown instead of a Continue button, with your photo on it if you set one.</li>
 </ul>
 
 <h3>Also in this release</h3>
 <ul>
-  <li><b>Open Project's toast now shows what you actually opened.</b> The agent's own logo when you started Claude Code, Codex, Kimi, or Gemini, and a folder when you opened a folder — instead of the same window icon for everything.</li>
+  <li><b>Open Project remembers the agent you picked.</b> Choosing Claude Code — YOLO used to quietly revert to plain Claude Code next time.</li>
+  <li><b>Long toasts fit.</b> Results from AI Text Transform, Image to Text and Context Fill were spilling out of the card instead of growing to hold the text.</li>
+  <li><b>The version number sits at the foot of Settings</b> and opens the changelog.</li>
+  <li>Bring-your-own-key isn't being offered while we work on it. Anyone already using their own key is unaffected.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.29.0/Dax.zip" length="15654163" type="application/octet-stream" sparkle:edSignature="17ltQ/O/knDe6OmXBj92Y6BRIXP24DQvspJeSUYLPGDzsQ1QyOKF45fII1il3IM+O53xR/bTGgIZDu9T98j6CQ=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.30.0/Dax.zip" length="15839304" type="application/octet-stream" sparkle:edSignature="S8qdooSgThw05W0CLN4WLpm6xBo1KaPj/Cy9JoPv/5B/UIpZGsmYJaKeCOeUxI/lNNcEc6YhVBmS3F1ZcALNBA=="/>
         </item>
     </channel>
 </rss>
