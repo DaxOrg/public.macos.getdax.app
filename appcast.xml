@@ -3,51 +3,59 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.31.0</title>
-            <pubDate>Sat, 08 Aug 2026 17:11:49 -0700</pubDate>
-            <sparkle:version>226</sparkle:version>
-            <sparkle:shortVersionString>2.31.0</sparkle:shortVersionString>
+            <title>2.32.0</title>
+            <pubDate>Tue, 11 Aug 2026 14:42:13 -0700</pubDate>
+            <sparkle:version>227</sparkle:version>
+            <sparkle:shortVersionString>2.32.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.31.0</h2>
-<p>Clipboard History stops being a list of grey text — links show what they point at, code is coloured, and everything is filed under the day you copied it. The fullscreen image viewer learns to zoom properly, and Agent Watch shows what your sessions are costing.</p>
+<h2>What's new in 2.32.0</h2>
+<p>Two new tools. Herdr runs a herd of coding agents in one window — connect a folder, add agents, split them across the screen and watch them all work. Clip to Link records a corner of your screen and hands back a link to the clip. There's also a home screen now, so the app has somewhere to land, and a shelf of badges on it that fills up as you use Dax.</p>
 
-<h3>Clipboard History <code>⌃⌥C</code></h3>
+<h3>Herdr <code>⌃⌥.</code></h3>
 <ul>
-  <li><b>A copied link shows what it points at.</b> The preview resolves it and shows the thing itself — the image, the PDF open at page one, the JSON or Markdown or source, a player for a clip, and for an ordinary page the title, description and picture the page offers to anything that links to it. The address stays above it, because the link is still what you copied.</li>
-  <li><b>The list fills in its own thumbnails.</b> Opening the palette looks up the links it's showing, so a row has its picture by the time you reach it rather than only once you've stopped on it.</li>
-  <li><b>Code is coloured.</b> JSON, JavaScript, Swift, Python, Ruby, Go, Rust, the C family, HTML, XML, CSS, shell, SQL, YAML and diffs. Dax works out which from the text itself, and leaves anything it can't name with confidence as plain text — prose is never coloured as code.</li>
-  <li><b>Grouped by when you copied it.</b> Today, Yesterday, Previous 7 Days, and so on, so a long history has somewhere to aim rather than being one unbroken column. Pressing ↩ on an old entry now files it under Today, where it belongs once it's back on your clipboard.</li>
-  <li><b>A shorter copy sound.</b> The old chime ran long enough to overlap with itself when you copied twice quickly. The new one lands and gets out of the way. Still off unless you switch it on.</li>
-  <li><b>Looking up a link is optional.</b> It's the one thing in Clipboard History that leaves your Mac, it only happens while the palette is open, never when you copy, and there's a switch in Settings.</li>
+  <li><b>Mission control for coding agents.</b> Connect a folder and Herdr opens a window of live terminals — Claude Code, Codex, Gemini, whichever you use — running side by side in the same project. Add an agent from a menu of them; you never open a raw shell you then have to type into.</li>
+  <li><b>Split by dragging.</b> Drag a pane against the edge of another and the space divides between them. Even Out Terminals squares up the seams without restarting anything, because a real re-layout would kill every process in the window.</li>
+  <li><b>A tree that tells you what's running.</b> Groups hold agents, agents show their brand and say when they're working. Rename anything, close anything, collapse the sidebar out of the way.</li>
+  <li><b>Green fills the screen rather than taking it over</b> — the menu bar and the Dock stay where they are, so a wall of terminals doesn't cost you the rest of your Mac.</li>
 </ul>
 
-<h3>The image viewer <code>⌘F</code></h3>
+<h3>Clip to Link <code>⌃⌥;</code></h3>
 <ul>
-  <li><b>Scroll to zoom, anchored on the pointer.</b> Whatever sits under the cursor stays under it the whole way in — the old pinch-only zoom grew from the centre, so the thing you wanted a closer look at slid off screen on the way.</li>
-  <li><b>10% to 1000%, and pinch anywhere.</b> Zooming out past fit works now, and both gestures work across the whole panel instead of only over the image — which mattered most at the sizes where the image is small.</li>
-  <li><b>An open hand over the whole screen</b>, closing to a fist while you drag, so it's clear the image can be moved.</li>
+  <li><b>Record a region, get a link.</b> Drag a box round the part of the screen worth showing, record, and the clip uploads and the link lands on your clipboard. GIF, MP4 or MOV — the format you used last is the one it offers next.</li>
+  <li><b>GIFs that move at the speed they were recorded.</b> Frames are read in order with the timestamps they were captured at, so a pause is a pause and a fast bit is fast, instead of the whole clip playing at several times life.</li>
+  <li><b>Clips have sound</b>, MOV shows what it weighs before you send it, and 15 and 30 fps are back — they divide the capture rate evenly, so no frames are dropped unevenly to reach them.</li>
 </ul>
 
-<h3>Agent Watch <code>⌃⌥M</code></h3>
+<h3>A home screen</h3>
 <ul>
-  <li><b>What each session has spent.</b> Watching an agent work tells you it's busy but not what it's costing. The number climbs while you watch it.</li>
-  <li><b>Stop a session from the list.</b> Both lists carry a stop button, and the palette takes ⌘⌫ on the selected row — no going to find the window first.</li>
+  <li><b>Somewhere to land.</b> Dax is a menu-bar app with no windows of its own, so finishing setup used to leave nothing on screen and everything behind a shortcut you hadn't learnt yet. The Dock icon now opens a page with your face, your name, and the three keys worth knowing.</li>
+  <li><b>A shelf of badges</b> under your photo, filling up as you use Dax. Click one for its page, or the tail of the stack for the whole case — every badge there is, earned and not, with what each one takes.</li>
+  <li><b>Your photo is a control.</b> Hover it to change it, or open it full size.</li>
+</ul>
+
+<h3>Notifications</h3>
+<ul>
+  <li><b>Do Not Disturb</b> <code>⌃⌥Z</code> — silence every toast without leaving what you're doing.</li>
+  <li><b>Toasts go to Notification Centre too</b>, and the ones that ask you something can be answered from there.</li>
+  <li><b>Hovering a toast holds it still.</b> Reading a long one was a race against its own countdown, and both ways to act on it are targets you have to be on the card to hit.</li>
 </ul>
 
 <h3>Also in this release</h3>
 <ul>
-  <li><b>Annotate has a blur tool</b> <code>R</code> — drag a rectangle over anything you'd rather not send. Arrows are softer, and lines start thicker.</li>
-  <li><b>Image to Prompt asks which style</b> you want rather than assuming, and its result card gets out of the way when Generate Image opens on top of it.</li>
-  <li><b>The shortcuts board shows your version</b>, so you don't have to open Settings to check what you're running.</li>
+  <li><b>Logging out takes the session with it.</b> Every window that was about a signed-in person closes, none of them open again until you sign in, and the page says "Signing out…" while it happens rather than vanishing mid-click.</li>
+  <li><b>A server having a bad minute now says so in a sentence</b> — and retries once, quietly, which is usually all it takes — instead of handing you a gateway's stack trace.</li>
+  <li><b>Snips photograph the screen before the menu can close</b>, so you can capture a menu or a popover that would otherwise disappear as you reach for it.</li>
+  <li><b>Annotate opens behind a scrim that tells you ⌘↩ sends</b>, and has a blur tool for anything you'd rather not include.</li>
+  <li><b>Settings closes on Escape</b>, palettes have a Back button for when ⎋ isn't obvious, and there's a Licenses pane with the terms in full.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.31.0/Dax.zip" length="16125643" type="application/octet-stream" sparkle:edSignature="Xo0GiMBxmNohr5cg/jwuZngU1MHqnG9Ac1JTzjme7J8PWiITWtWoc/Cg7px9qKeOJ142qfHDY0H9wA0yb9TTBg=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.32.0/Dax.zip" length="22168518" type="application/octet-stream" sparkle:edSignature="9uaeSPj85e7moYuLTSpzKZ3iYsk5Yr38OWDrAW44yGlOZV7P2nVQyIHJu+R+gqjxo20U4UdBvgZURqOQN9nTDg=="/>
         </item>
     </channel>
 </rss>
