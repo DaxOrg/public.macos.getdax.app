@@ -3,40 +3,51 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.34.0</title>
-            <pubDate>Tue, 18 Aug 2026 23:10:57 -0700</pubDate>
-            <sparkle:version>231</sparkle:version>
-            <sparkle:shortVersionString>2.34.0</sparkle:shortVersionString>
+            <title>2.35.0</title>
+            <pubDate>Wed, 19 Aug 2026 01:24:43 -0700</pubDate>
+            <sparkle:version>232</sparkle:version>
+            <sparkle:shortVersionString>2.35.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.34.0</h2>
-<p>Adding a server to Herdr tells you what happened. Test now sits in the server dialog itself and shows the actual connection log, and two ways a perfectly good server could fail for reasons you couldn't see are gone.</p>
+<h2>What's new in 2.35.0</h2>
+<p>Herdr now tracks what every agent is doing as it happens, instead of when you click it — and offers to install your first coding agent on a machine that hasn't got one. Setting Dax up asks for one permission at a time, Image Ask goes straight from the picture to the question, and the installer no longer fails on Macs that aren't set to English.</p>
 
-<h3>Test, with the log</h3>
+<h3>Herdr sees your agents work <code>⌃⌥.</code></h3>
 <ul>
-  <li><b>Test is in the server dialog now</b>, next to Done — no saving and going back to the list to find out whether what you just typed works.</li>
-  <li><b>You see the connection happen.</b> Which address and port answered, which key was offered, what the server was willing to accept and what it finally accepted, and what the server said back. The lines that tell the story stand out; the rest of ssh's detail is there, quieter, for the day you need it. Copy takes the whole log.</li>
-  <li><b>It says what it's about to do first</b> — the key file it's using and that file's permissions, or that a saved password is being used. Half of all failures are visible in that first line.</li>
-  <li><b>A password you just typed is the one it tests</b>, rather than the one saved last time.</li>
+  <li><b>Activity is live.</b> An agent that starts working, finishes, or stops to ask you something changes on the spot — you don't have to click it to find out. That was the point of the window and it was the one thing it couldn't do.</li>
+  <li><b>A machine with no coding agent offers you one.</b> Connect a fresh server, or open Herdr on a Mac that hasn't got Claude Code, Codex, Gemini or Cursor Agent, and Dax offers to install one rather than starting an agent that isn't there. On a server it shows you every command before it runs any of them.</li>
+  <li><b>New Agent starts what the machine actually has.</b> It used to start whichever agent you last picked, which on a different machine is a pane that opens, waits, and closes itself. Open a folder and you get the agent that's installed there — the one you just installed, if you just did.</li>
 </ul>
 
-<h3>Two invisible reasons a server wouldn't connect</h3>
+<h3>Setting Dax up</h3>
 <ul>
-  <li><b>An address pasted from a cloud console works.</b> Copied text often carries a character that doesn't draw — a non-breaking space, a zero-width space — and ssh refuses the whole address because of it, saying only "hostname contains invalid characters" under a field that looks perfect. Dax removes those before connecting, and a server you already saved with one in it starts working on the next try.</li>
-  <li><b>A downloaded key file works.</b> A <code>.pem</code> from AWS arrives readable by everyone on the Mac, which ssh won't touch; Dax narrows it to owner-only for you instead of failing with "Permission denied".</li>
-  <li><b>And when something is genuinely wrong, the message names it</b> — the field to look at, or the file and the one command that fixes it, instead of ssh's line about a key the server never saw.</li>
+  <li><b>One permission at a time.</b> Screen Recording, then Accessibility, then the Dax Helper — each on its own page, saying what it lets Dax do rather than what the switch is called. Only Screen Recording is required; the other two say "Skip for Now".</li>
+  <li><b>It asks once.</b> Granting used to raise the macOS alert <i>and</i> open System Settings behind it from a single click, and the tools that type for you asked again on every attempt. Now one thing happens per click, and a tool that can't type says so where you're looking.</li>
+  <li><b>The Dax Helper stopped calling itself broken.</b> macOS asks whether Dax may run in the background — that's the normal path, and Dax was reporting it as a failed install a moment before the notification arrived. Click Allow and the row turns green, as it always did.</li>
+  <li><b>The tour ends on your home screen</b>, once the badges you just earned have had their moment.</li>
+</ul>
+
+<h3>Image Ask</h3>
+<ul>
+  <li><b>Snip, then ask.</b> The annotation editor no longer opens first. Mark up the capture when it helps — the Annotate button, or ⌘E — and go straight to the question when it doesn't.</li>
+</ul>
+
+<h3>Installing Dax</h3>
+<ul>
+  <li><b>The .pkg installer works on a Mac in any language.</b> It's now a properly described package rather than one macOS had to guess at, which also means it asks to quit Dax before replacing it, and always installs to Applications.</li>
 </ul>
 
 <h3>Also in this release</h3>
 <ul>
+  <li>A Herdr server whose address was pasted with an invisible character in it connects — and a key file downloaded from a cloud console is narrowed to owner-only for you.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.34.0/Dax.zip" length="26204938" type="application/octet-stream" sparkle:edSignature="yzy9JE6Am5kSCC6y0XjQFy08/otOC3w5tYaRNA+RhFHj2eYrXqoa19TDmHcKJFHxgFzmHnnefeyzipxQ8PofBg=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.35.0/Dax.zip" length="26338419" type="application/octet-stream" sparkle:edSignature="ew+DulQ5xzOlNvwxbL6KIGtMWdqUH14BtPGrRbxzUs6IiMk6urDcpK3jXJ9EMf2blD33WlFtX/tO+rgjL6frDQ=="/>
         </item>
     </channel>
 </rss>
