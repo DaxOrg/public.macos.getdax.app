@@ -3,21 +3,30 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.33.1</title>
-            <pubDate>Tue, 18 Aug 2026 22:22:52 -0700</pubDate>
-            <sparkle:version>230</sparkle:version>
-            <sparkle:shortVersionString>2.33.1</sparkle:shortVersionString>
+            <title>2.34.0</title>
+            <pubDate>Tue, 18 Aug 2026 23:10:57 -0700</pubDate>
+            <sparkle:version>231</sparkle:version>
+            <sparkle:shortVersionString>2.34.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.33.1</h2>
-<p>A fix for connecting Herdr to a server with a key file.</p>
+<h2>What's new in 2.34.0</h2>
+<p>Adding a server to Herdr tells you what happened. Test now sits in the server dialog itself and shows the actual connection log, and two ways a perfectly good server could fail for reasons you couldn't see are gone.</p>
 
-<h3>A downloaded key file just works now</h3>
+<h3>Test, with the log</h3>
 <ul>
-  <li><b>Dax narrows your key's permissions for you.</b> A <code>.pem</code> downloaded from AWS, or from any cloud console, arrives readable by everyone on the Mac — and ssh refuses to use a private key in that state. Dax now tightens it to owner-only before connecting, so the key you just downloaded works on the first try.</li>
-  <li><b>And when it can't, it says so properly.</b> The old failure was <i>Permission denied (publickey)</i>, which reads as the server turning your key down when the key never left your Mac. A key Dax isn't allowed to touch now names the file and the one command that fixes it.</li>
+  <li><b>Test is in the server dialog now</b>, next to Done — no saving and going back to the list to find out whether what you just typed works.</li>
+  <li><b>You see the connection happen.</b> Which address and port answered, which key was offered, what the server was willing to accept and what it finally accepted, and what the server said back. The lines that tell the story stand out; the rest of ssh's detail is there, quieter, for the day you need it. Copy takes the whole log.</li>
+  <li><b>It says what it's about to do first</b> — the key file it's using and that file's permissions, or that a saved password is being used. Half of all failures are visible in that first line.</li>
+  <li><b>A password you just typed is the one it tests</b>, rather than the one saved last time.</li>
+</ul>
+
+<h3>Two invisible reasons a server wouldn't connect</h3>
+<ul>
+  <li><b>An address pasted from a cloud console works.</b> Copied text often carries a character that doesn't draw — a non-breaking space, a zero-width space — and ssh refuses the whole address because of it, saying only "hostname contains invalid characters" under a field that looks perfect. Dax removes those before connecting, and a server you already saved with one in it starts working on the next try.</li>
+  <li><b>A downloaded key file works.</b> A <code>.pem</code> from AWS arrives readable by everyone on the Mac, which ssh won't touch; Dax narrows it to owner-only for you instead of failing with "Permission denied".</li>
+  <li><b>And when something is genuinely wrong, the message names it</b> — the field to look at, or the file and the one command that fixes it, instead of ssh's line about a key the server never saw.</li>
 </ul>
 
 <h3>Also in this release</h3>
@@ -27,7 +36,7 @@
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.33.1/Dax.zip" length="26135946" type="application/octet-stream" sparkle:edSignature="27ckxZ8RRD4YPH621YLUWZhyEE4jEoM3anJZEYIoV5j7sPBk+m8JDo7ILLirBI3B1DeRfhe60kMbBwRs2K1yCQ=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.34.0/Dax.zip" length="26204938" type="application/octet-stream" sparkle:edSignature="yzy9JE6Am5kSCC6y0XjQFy08/otOC3w5tYaRNA+RhFHj2eYrXqoa19TDmHcKJFHxgFzmHnnefeyzipxQ8PofBg=="/>
         </item>
     </channel>
 </rss>
