@@ -3,51 +3,41 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.35.0</title>
-            <pubDate>Wed, 19 Aug 2026 01:24:43 -0700</pubDate>
-            <sparkle:version>232</sparkle:version>
-            <sparkle:shortVersionString>2.35.0</sparkle:shortVersionString>
+            <title>2.36.0</title>
+            <pubDate>Wed, 19 Aug 2026 03:00:09 -0700</pubDate>
+            <sparkle:version>233</sparkle:version>
+            <sparkle:shortVersionString>2.36.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.35.0</h2>
-<p>Herdr now tracks what every agent is doing as it happens, instead of when you click it — and offers to install your first coding agent on a machine that hasn't got one. Setting Dax up asks for one permission at a time, Image Ask goes straight from the picture to the question, and the installer no longer fails on Macs that aren't set to English.</p>
+<h2>What's new in 2.36.0</h2>
+<p>Two people can now work one herd at the same time. Name the same session on the same server and you are both looking at the same panes and the same agents — in your own tabs, at once, with your own SSH connection.</p>
 
-<h3>Herdr sees your agents work <code>⌃⌥.</code></h3>
+<h3>Share a herd <code>⌃⌥.</code></h3>
 <ul>
-  <li><b>Activity is live.</b> An agent that starts working, finishes, or stops to ask you something changes on the spot — you don't have to click it to find out. That was the point of the window and it was the one thing it couldn't do.</li>
-  <li><b>A machine with no coding agent offers you one.</b> Connect a fresh server, or open Herdr on a Mac that hasn't got Claude Code, Codex, Gemini or Cursor Agent, and Dax offers to install one rather than starting an agent that isn't there. On a server it shows you every command before it runs any of them.</li>
-  <li><b>New Agent starts what the machine actually has.</b> It used to start whichever agent you last picked, which on a different machine is a pane that opens, waits, and closes itself. Open a folder and you get the agent that's installed there — the one you just installed, if you just did.</li>
+  <li><b>A Session field on every server.</b> Put the same name in it on two Macs — <code>team</code>, say — and both of you are clients of the same herd on that machine. Leave it blank and nothing changes: that's the server's own herd, exactly as before.</li>
+  <li><b>Different tabs at the same time.</b> Clicking a pane used to move the other person's view, because a herd has one focused pane and Dax was setting it on every click. Your selection is yours now — you can be in one tab while they're in another, both live.</li>
+  <li><b>You can see who else is there.</b> Their name sits beside the machine's name in the switcher, and a pane somebody is driving says so.</li>
+  <li><b>One driver per terminal, and it's deliberate.</b> Open a pane your teammate is typing in and you get a live view of it rather than taking their keyboard out from under them. <b>Take Control</b> moves it to you, on purpose, when you want it.</li>
+  <li><b>Nobody is the host.</b> The herd lives on the server, so whoever closes their laptop, the agents keep working and the other person keeps watching.</li>
 </ul>
 
-<h3>Setting Dax up</h3>
+<h3>What it needs</h3>
 <ul>
-  <li><b>One permission at a time.</b> Screen Recording, then Accessibility, then the Dax Helper — each on its own page, saying what it lets Dax do rather than what the switch is called. Only Screen Recording is required; the other two say "Skip for Now".</li>
-  <li><b>It asks once.</b> Granting used to raise the macOS alert <i>and</i> open System Settings behind it from a single click, and the tools that type for you asked again on every attempt. Now one thing happens per click, and a tool that can't type says so where you're looking.</li>
-  <li><b>The Dax Helper stopped calling itself broken.</b> macOS asks whether Dax may run in the background — that's the normal path, and Dax was reporting it as a failed install a moment before the notification arrived. Click Allow and the row turns green, as it always did.</li>
-  <li><b>The tour ends on your home screen</b>, once the badges you just earned have had their moment.</li>
-</ul>
-
-<h3>Image Ask</h3>
-<ul>
-  <li><b>Snip, then ask.</b> The annotation editor no longer opens first. Mark up the capture when it helps — the Annotate button, or ⌘E — and go straight to the question when it doesn't.</li>
-</ul>
-
-<h3>Installing Dax</h3>
-<ul>
-  <li><b>The .pkg installer works on a Mac in any language.</b> It's now a properly described package rather than one macOS had to guess at, which also means it asks to quit Dax before replacing it, and always installs to Applications.</li>
+  <li>The same server and the same account on it, with each person's SSH key added — Dax doesn't need anything else, and nothing is relayed through us.</li>
+  <li>Simultaneous work means a pane each. Two people typing into one terminal is a race whatever the app does about it.</li>
 </ul>
 
 <h3>Also in this release</h3>
 <ul>
-  <li>A Herdr server whose address was pasted with an invisible character in it connects — and a key file downloaded from a cloud console is narrowed to owner-only for you.</li>
+  <li><b>Adding an agent lands where you asked.</b> A new agent could appear beside the wrong pane, in the wrong project — Dax was naming the pane to split with the wrong field, so herdr split whatever was focused instead.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.35.0/Dax.zip" length="26338419" type="application/octet-stream" sparkle:edSignature="ew+DulQ5xzOlNvwxbL6KIGtMWdqUH14BtPGrRbxzUs6IiMk6urDcpK3jXJ9EMf2blD33WlFtX/tO+rgjL6frDQ=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.36.0/Dax.zip" length="26403240" type="application/octet-stream" sparkle:edSignature="f7q7plj/imAVQaYOxAiZnG/SPHqRvTKFFxlHhWlYLloV4DNfirVMCbGCL+hUZFZ3HmT4PGCZWelhGzdGImI7DQ=="/>
         </item>
     </channel>
 </rss>
