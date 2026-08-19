@@ -3,74 +3,31 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.33.0</title>
-            <pubDate>Tue, 18 Aug 2026 15:08:40 -0700</pubDate>
-            <sparkle:version>229</sparkle:version>
-            <sparkle:shortVersionString>2.33.0</sparkle:shortVersionString>
+            <title>2.33.1</title>
+            <pubDate>Tue, 18 Aug 2026 22:22:52 -0700</pubDate>
+            <sparkle:version>230</sparkle:version>
+            <sparkle:shortVersionString>2.33.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.33.0</h2>
-<p>Herdr leaves your Mac: point it at a server over SSH and the herd runs there, with a Remote Panel that shows the coding agents, open ports, websites and certificates on the box. There are new tools too — PRD Maker writes the brief for what you're about to build, Remove BG cuts the subject out of a picture, and File Drop gives you a shelf that comes out of the notch. Ask AI can search the web and renders what it gets back. And Dax can now keep your Mac awake with the lid shut.</p>
+<h2>What's new in 2.33.1</h2>
+<p>A fix for connecting Herdr to a server with a key file.</p>
 
-<h3>Herdr on a server <code>⌃⌥.</code></h3>
+<h3>A downloaded key file just works now</h3>
 <ul>
-  <li><b>A herd that isn't on your laptop.</b> Connect a server and Herdr reaches it down a single SSH forward — same window, same tabs, same agents, running on the machine that has the repo, the RAM and the uptime.</li>
-  <li><b>It asks the server what it can run</b>, not the laptop, and sends the engine over when the server can't fetch it. A connection that fails says which of the four things went wrong, and offers the settings for it rather than a shrug.</li>
-  <li><b>Tabs, and the keys for them.</b> ⌘T for a tab, ⌘N for an agent, ⌃Tab to walk the bar, arrows to move within it, ⌘W to close the agent rather than the whole herd. Name a tab while you still remember what it was for.</li>
-  <li><b>The sidebar reads as a herd</b> — agents under their tab, one line each, brand and status where you can see them, and a collapsed sidebar still grouped by tab instead of one flat run.</li>
-</ul>
-
-<h3>Remote Panel</h3>
-<ul>
-  <li><b>The server behind the herd, in five tabs.</b> Coding agents (with a one-click update), Services &amp; Ports, Web Servers &amp; SSL, Usage and Utilities.</li>
-  <li><b>Sites grouped by domain</b>, wearing their own icons, with their certificates and expiry beside them — and taking one down is fenced at every step: the path is checked twice, a shared document root is refused, configs are archived first, and the web server only reloads if its config still passes.</li>
-  <li><b>Usage as pictures</b> — disk as rings, memory as a bar, load beside the core count — and a live console for anything that streams, which you can hide while the command keeps running.</li>
-</ul>
-
-<h3>Three new tools</h3>
-<ul>
-  <li><b>PRD Maker</b> <code>⌃⌥E</code> — say what you want to make and get the brief for it: a composer to start from, three ways to be asked, answers you can go back into, and a document with no holes in it.</li>
-  <li><b>Remove BG</b> — the subject and nothing else. Snip or pick a picture, look at the cutout, and leave with the image or a link to it.</li>
-  <li><b>File Drop</b> — a drop zone that comes out of the notch. Shake a file and the shelf comes to you; hold, move, or take it now.</li>
-</ul>
-
-<h3>Ask AI</h3>
-<ul>
-  <li><b>It can search the web</b>, and research is its own mode rather than the same button meaning two things.</li>
-  <li><b>Markdown, rendered.</b> The models were already sending it; now you read it as headings, lists and code blocks, and the copy button on a block says what it copies.</li>
-  <li><b>An input box, not a dialog with one in it</b> — drag it where you want it by the grip, and click any image you attached to open it full size.</li>
-</ul>
-
-<h3>Your first five minutes</h3>
-<ul>
-  <li><b>A demo that takes the screen</b> and walks you to your first badge, with a wall you can poke rather than a paragraph you have to read. Replay it whenever you like.</li>
-  <li><b>Badges arrive properly.</b> A card at the bottom of the screen, a lap of light around it, some paper in the air — and it waits for whatever is already on screen to finish before taking its turn. The shelf on your home screen fills in at the same moment, rather than quietly beforehand.</li>
-  <li><b>Badges belong to the account</b>, not to the Mac. Sign in as somebody else and you get their progress, not the last person's.</li>
-</ul>
-
-<h3>Keeping the Mac awake</h3>
-<ul>
-  <li><b>Close the lid and keep working.</b> One switch in Settings, a helper that installs itself alongside the other permissions, and it asks once rather than every time.</li>
-  <li><b>Dax holds the Mac open while it's working</b> on something of yours, and lets go when it's done.</li>
+  <li><b>Dax narrows your key's permissions for you.</b> A <code>.pem</code> downloaded from AWS, or from any cloud console, arrives readable by everyone on the Mac — and ssh refuses to use a private key in that state. Dax now tightens it to owner-only before connecting, so the key you just downloaded works on the first try.</li>
+  <li><b>And when it can't, it says so properly.</b> The old failure was <i>Permission denied (publickey)</i>, which reads as the server turning your key down when the key never left your Mac. A key Dax isn't allowed to touch now names the file and the one command that fixes it.</li>
 </ul>
 
 <h3>Also in this release</h3>
 <ul>
-  <li><b>Coding agents, found and installed for you.</b> Settings sees which CLIs are on this Mac and offers the ones that aren't — without handing you a terminal to type into.</li>
-  <li><b>An Appearance pane</b>, with the launcher's blur in it: the screen goes soft behind the launcher instead of the launcher floating on a hard edge.</li>
-  <li><b>Errors are sentences</b> now, not status codes, wherever one can reach you.</li>
-  <li><b>One Dax at a time</b> — a second copy hands the window back to the one already running.</li>
-  <li><b>Snip lets the screen become the screen again before the shutter</b>, and says so when it can't be frozen; Annotate sends with a key you press rather than a screen that flinches.</li>
-  <li><b>Share where sharing belongs</b> — Image to URL and Generate Image both hand pictures to the Mac's own share sheet, and Generate Image can try another model without starting over.</li>
-  <li><b>Fanout has been retired</b>; its saved profiles carry over to Herdr projects.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.33.0/Dax.zip" length="26131900" type="application/octet-stream" sparkle:edSignature="yCVvlsIBm0piRC0B0VcmW4iheVsOjQbfyzjoLv/vGIVMex6hTpoP+gHKGYjGv5qwUpQxALjhKt99B2we0pUtDw=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.33.1/Dax.zip" length="26135946" type="application/octet-stream" sparkle:edSignature="27ckxZ8RRD4YPH621YLUWZhyEE4jEoM3anJZEYIoV5j7sPBk+m8JDo7ILLirBI3B1DeRfhe60kMbBwRs2K1yCQ=="/>
         </item>
     </channel>
 </rss>
