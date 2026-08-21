@@ -3,41 +3,50 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.36.0</title>
-            <pubDate>Wed, 19 Aug 2026 03:00:09 -0700</pubDate>
-            <sparkle:version>233</sparkle:version>
-            <sparkle:shortVersionString>2.36.0</sparkle:shortVersionString>
+            <title>2.37.0</title>
+            <pubDate>Thu, 20 Aug 2026 23:19:57 -0700</pubDate>
+            <sparkle:version>234</sparkle:version>
+            <sparkle:shortVersionString>2.37.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.36.0</h2>
-<p>Two people can now work one herd at the same time. Name the same session on the same server and you are both looking at the same panes and the same agents — in your own tabs, at once, with your own SSH connection.</p>
+<h2>What's new in 2.37.0</h2>
+<p>2.36 let two people share a herd that lives on a <i>server</i>. This one shares the herd on your own Mac: press <b>Share this herd</b>, send the code, and someone with no herdr at all can watch your agents and type into them from their own Dax.</p>
 
-<h3>Share a herd <code>⌃⌥.</code></h3>
+<h3>Share the herd on your Mac <code>⌃⌥.</code></h3>
 <ul>
-  <li><b>A Session field on every server.</b> Put the same name in it on two Macs — <code>team</code>, say — and both of you are clients of the same herd on that machine. Leave it blank and nothing changes: that's the server's own herd, exactly as before.</li>
-  <li><b>Different tabs at the same time.</b> Clicking a pane used to move the other person's view, because a herd has one focused pane and Dax was setting it on every click. Your selection is yours now — you can be in one tab while they're in another, both live.</li>
-  <li><b>You can see who else is there.</b> Their name sits beside the machine's name in the switcher, and a pane somebody is driving says so.</li>
-  <li><b>One driver per terminal, and it's deliberate.</b> Open a pane your teammate is typing in and you get a live view of it rather than taking their keyboard out from under them. <b>Take Control</b> moves it to you, on purpose, when you want it.</li>
-  <li><b>Nobody is the host.</b> The herd lives on the server, so whoever closes their laptop, the agents keep working and the other person keeps watching.</li>
+  <li><b>An invite code, or a link.</b> Sharing is the small button at the foot of the sidebar, beside your account. Your guest pastes the code into <b>Join a Shared Herd…</b> in the herd switcher, or just opens the link.</li>
+  <li><b>They see the herd, not their own Mac.</b> The guest window draws nothing that didn't arrive in a frame — your agents, what each one is doing, and the live terminal of whichever one they click.</li>
+  <li><b>Typing at an agent now presses Return.</b> It didn't: the line was typed and left sitting in the agent's composer, unsent, while the person who asked waited for an answer. Return is a key, and it is sent as one.</li>
+  <li><b>The Agent Monitor, on their side too.</b> The same four groups you see — <b>Needs you</b>, <b>Working</b>, <b>Done</b>, <b>Idle</b> — so you are both reading one sidebar rather than two.</li>
+  <li><b>They can start an agent.</b> The same New Agent card you get, listing what <i>your</i> machine can actually run, with Installed and Not installed the way you see them. It lands as a real herdr agent with a status, not a command typed at a shell. You get a toast saying who started what.</li>
+  <li><b>The window is a window again.</b> It was drawing straight onto your wallpaper — transparent chrome with nothing behind it. It wears the same glass as the herd window now.</li>
 </ul>
 
-<h3>What it needs</h3>
+<h3>Shepherd</h3>
 <ul>
-  <li>The same server and the same account on it, with each person's SSH key added — Dax doesn't need anything else, and nothing is relayed through us.</li>
-  <li>Simultaneous work means a pane each. Two people typing into one terminal is a race whatever the app does about it.</li>
+  <li><b>The herd tool is called Dax Shepherd</b>, and it has a place on the Home screen rather than only a shortcut.</li>
+  <li><b>The Agent Monitor</b> sorts your agents by what they want from you, and reads either way: <b>List</b> down the column, or <b>Flock</b> — the whole herd at a glance, grouped by tab and coloured to match.</li>
+  <li><b>New Agent asks every time</b>, in the middle of the window, opening on the one you used last. It knows what the machine on screen has installed — including a server — and offers to install what it hasn't, all nineteen agents in one press.</li>
+  <li><b>Keys.</b> <code>⌘B</code> for the sidebar, <code>⌘F</code> for full screen, <code>⌘/</code> for the whole list.</li>
+  <li><b>Tabs have a lane of their own</b> that scrolls, the collapsed strip keeps its colour and status, and the seam between two terminals says it can be dragged.</li>
+  <li><b>Terminal background is a dial</b> in settings, and starts pitch black.</li>
+  <li>The agent list no longer scrolls to wherever the mouse is.</li>
 </ul>
 
 <h3>Also in this release</h3>
 <ul>
-  <li><b>Adding an agent lands where you asked.</b> A new agent could appear beside the wrong pane, in the wrong project — Dax was naming the pane to split with the wrong field, so herdr split whatever was focused instead.</li>
+  <li><b>Ask AI</b> — snip anything on screen and ask about it; the snip goes straight to the question.</li>
+  <li><b>Services &amp; Ports</b> names what is on each port and draws each one with the software's own logo.</li>
+  <li>A spent quota now says so in a toast, with the upgrade dialog behind it, instead of failing quietly.</li>
+  <li>Dax draws in its own orange on every Mac, whatever the system accent colour is set to.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.36.0/Dax.zip" length="26403240" type="application/octet-stream" sparkle:edSignature="f7q7plj/imAVQaYOxAiZnG/SPHqRvTKFFxlHhWlYLloV4DNfirVMCbGCL+hUZFZ3HmT4PGCZWelhGzdGImI7DQ=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.37.0/Dax.zip" length="28646151" type="application/octet-stream" sparkle:edSignature="GGSn0zIXLyQ0UbyD3296fgWpLwjtbD5xY+JSlTe8vsk95Vzsh05mfCZUyEStkkRjlta9JVS9Fl5qSIuf5IlHAw=="/>
         </item>
     </channel>
 </rss>
