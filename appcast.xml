@@ -3,50 +3,33 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.37.0</title>
-            <pubDate>Thu, 20 Aug 2026 23:19:57 -0700</pubDate>
-            <sparkle:version>234</sparkle:version>
-            <sparkle:shortVersionString>2.37.0</sparkle:shortVersionString>
+            <title>2.37.1</title>
+            <pubDate>Fri, 21 Aug 2026 18:03:59 -0700</pubDate>
+            <sparkle:version>235</sparkle:version>
+            <sparkle:shortVersionString>2.37.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.37.0</h2>
-<p>2.36 let two people share a herd that lives on a <i>server</i>. This one shares the herd on your own Mac: press <b>Share this herd</b>, send the code, and someone with no herdr at all can watch your agents and type into them from their own Dax.</p>
+<h2>What's new in 2.37.1</h2>
+<p>A fix for typing — and dictating — into an agent in Dax Shepherd.</p>
 
-<h3>Share the herd on your Mac <code>⌃⌥.</code></h3>
+<h3>The keyboard stays in an agent</h3>
 <ul>
-  <li><b>An invite code, or a link.</b> Sharing is the small button at the foot of the sidebar, beside your account. Your guest pastes the code into <b>Join a Shared Herd…</b> in the herd switcher, or just opens the link.</li>
-  <li><b>They see the herd, not their own Mac.</b> The guest window draws nothing that didn't arrive in a frame — your agents, what each one is doing, and the live terminal of whichever one they click.</li>
-  <li><b>Typing at an agent now presses Return.</b> It didn't: the line was typed and left sitting in the agent's composer, unsent, while the person who asked waited for an answer. Return is a key, and it is sent as one.</li>
-  <li><b>The Agent Monitor, on their side too.</b> The same four groups you see — <b>Needs you</b>, <b>Working</b>, <b>Done</b>, <b>Idle</b> — so you are both reading one sidebar rather than two.</li>
-  <li><b>They can start an agent.</b> The same New Agent card you get, listing what <i>your</i> machine can actually run, with Installed and Not installed the way you see them. It lands as a real herdr agent with a status, not a command typed at a shell. You get a toast saying who started what.</li>
-  <li><b>The window is a window again.</b> It was drawing straight onto your wallpaper — transparent chrome with nothing behind it. It wears the same glass as the herd window now.</li>
-</ul>
-
-<h3>Shepherd</h3>
-<ul>
-  <li><b>The herd tool is called Dax Shepherd</b>, and it has a place on the Home screen rather than only a shortcut.</li>
-  <li><b>The Agent Monitor</b> sorts your agents by what they want from you, and reads either way: <b>List</b> down the column, or <b>Flock</b> — the whole herd at a glance, grouped by tab and coloured to match.</li>
-  <li><b>New Agent asks every time</b>, in the middle of the window, opening on the one you used last. It knows what the machine on screen has installed — including a server — and offers to install what it hasn't, all nineteen agents in one press.</li>
-  <li><b>Keys.</b> <code>⌘B</code> for the sidebar, <code>⌘F</code> for full screen, <code>⌘/</code> for the whole list.</li>
-  <li><b>Tabs have a lane of their own</b> that scrolls, the collapsed strip keeps its colour and status, and the seam between two terminals says it can be dragged.</li>
-  <li><b>Terminal background is a dial</b> in settings, and starts pitch black.</li>
-  <li>The agent list no longer scrolls to wherever the mouse is.</li>
+  <li><b>What you type lands in the pane you're looking at.</b> Shepherd only ever <i>set</i> focus — on a click, on the arrow keys, on the window coming forward — and nothing put it back when it came loose. A window holding its own keyboard swallows everything typed at it, so keystrokes went nowhere with no sign why. A pane that has the keyboard now keeps it, and one that loses it gets it back before the next keystroke, not after.</li>
+  <li><b>Dictation can find an agent to talk to.</b> Willow, Wispr Flow and macOS Dictation all ask for the focused element and check what it is before they insert. With the keyboard sitting on the window there was no text area to find, and they refused. There is one now, so a dictated line reaches the agent — even with Dax not the frontmost app.</li>
+  <li><b>It stays out of your way.</b> Focus is left exactly where it is for a sheet, a card drawn over the herd, any text field, and a terminal that already has it. Closing a card or finishing a rename hands the keyboard straight back to the pane rather than waiting to be noticed.</li>
 </ul>
 
 <h3>Also in this release</h3>
 <ul>
-  <li><b>Ask AI</b> — snip anything on screen and ask about it; the snip goes straight to the question.</li>
-  <li><b>Services &amp; Ports</b> names what is on each port and draws each one with the software's own logo.</li>
-  <li>A spent quota now says so in a toast, with the upgrade dialog behind it, instead of failing quietly.</li>
-  <li>Dax draws in its own orange on every Mac, whatever the system accent colour is set to.</li>
+  <li>On the home screen, <b>See every shortcut</b> now sits below the two tools rather than between them — it's the footnote to that list, not a third entry in it.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.37.0/Dax.zip" length="28646151" type="application/octet-stream" sparkle:edSignature="GGSn0zIXLyQ0UbyD3296fgWpLwjtbD5xY+JSlTe8vsk95Vzsh05mfCZUyEStkkRjlta9JVS9Fl5qSIuf5IlHAw=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.37.1/Dax.zip" length="28649844" type="application/octet-stream" sparkle:edSignature="s7lUlyFeQGylzBGULPfeaVCSpSQMAT2v6u0VLl6kOr6rs1nUAGJ4t4Wh+OmMFG7LqUQqGSMw1/CQPoy7v5obAw=="/>
         </item>
     </channel>
 </rss>
