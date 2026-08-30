@@ -3,103 +3,78 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.38.0</title>
-            <pubDate>Thu, 27 Aug 2026 15:28:25 -0700</pubDate>
-            <sparkle:version>236</sparkle:version>
-            <sparkle:shortVersionString>2.38.0</sparkle:shortVersionString>
+            <title>2.39.0</title>
+            <pubDate>Sat, 29 Aug 2026 21:56:31 -0700</pubDate>
+            <sparkle:version>237</sparkle:version>
+            <sparkle:shortVersionString>2.39.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.38.0</h2>
-<p>The largest release since 2.0 — 188 changes. Dax renders Markdown itself and lends the same renderer to Finder, the accent colour became yours to choose, every palette was rebuilt out of one set of parts, and Shepherd learned to hold on to a machine instead of dropping it. Some things also left, and they are listed at the bottom rather than buried.</p>
+<h2>What's new in 2.39.0</h2>
+<p>Forty-six changes, nearly all of them in Shepherd. The theme is knowing where you are: panes name themselves after the work in them, colour tells folders apart, ⌘J leads with the agent you were just in, and a pane can be picked up and put down somewhere else.</p>
 
-<h3>Markdown, in Dax and in Finder</h3>
+<h3>Every pane says what it is doing</h3>
 <ul>
-  <li><b>Dax renders Markdown itself now.</b> Its own parser and layout, rather than handing the text to something that half-understood it — so tables, nested lists, task lists, block quotes, footnotes and fenced code all come out the way the document says. Code blocks are highlighted by the same highlighter the rest of Dax uses, which moved into shared code so there is exactly one of it.</li>
-  <li><b>The viewer edits.</b> Open a <code>.md</code>, change it, save it. It is a viewer you can work in rather than a window you read and close.</li>
-  <li><b>Pictures and video play in place.</b> An image or a clip a document references is shown, not left sitting there as a file path.</li>
-  <li><b>Press space on a Markdown file in Finder and you get the same thing.</b> A Quick Look extension ships inside Dax carrying the identical renderer, so the Finder preview and the Dax viewer can't drift apart into two different opinions about your file.</li>
-  <li><b>An agent's report is rendered, not printed.</b> What comes back from an agent is read as the Markdown it actually is, instead of arriving with its asterisks and backticks showing.</li>
+  <li><b>A pane is named after the work in it,</b> in a few words, read off the pane itself by Apple's on-device model. An agent writes its terminal title once, from the first thing you asked it, so a herd left running all afternoon was a list of names for conversations that ended hours ago.</li>
+  <li><b>Nothing leaves your Mac</b> — the reading is done on the device, and a pane you have named yourself keeps your name. Without Apple Intelligence, panes keep the titles they always had. It can be turned off in Settings.</li>
+  <li><b>A shimmer sits where the rest of the name is coming,</b> so a name that is still being read looks like it is arriving rather than like it stopped halfway.</li>
+  <li><b>A tab is named for the folder it is working in,</b> and an agent's row says which folder it is in — so two checkouts of the same repo stop looking like the same place.</li>
 </ul>
 
-<h3>The accent colour is yours</h3>
+<h3>Colour tells folders apart</h3>
 <ul>
-  <li><b>Settings › Appearance picks it.</b> Dax's own orange by default, <i>Match&nbsp;macOS</i> to follow System Settings, the eight macOS colours, Graphite, and a colour well for anything else at all.</li>
-  <li><b>Following macOS outright was the first attempt, and it went too far.</b> An app that can only ever be the colour System Settings names has no colour of its own, and Dax's is orange. Hence the preference, with matching as one option inside it rather than the whole policy.</li>
-  <li><b>It reaches the places a half-done accent misses.</b> The inside of popovers, the settings switches, the default avatar, the small dialogs, and the first tab of every project. A later sweep caught the ones the first pass missed and made them survive Light mode, which several didn't.</li>
-  <li><b>Selection stopped shouting.</b> It wore the accent at full strength, which was loud in a long list; it is drawn back now.</li>
+  <li><b>Every tab in a folder shares that folder's colour.</b> Two folders means two colours, however many tabs are open in them — the tree, the collapsed strip, the tab bar, the flock and the Agent Monitor all follow at once.</li>
+  <li><b>Settings › Appearance › Colour chooses,</b> with a small drawing of each scheme so the choice shows its work: one folder split three ways, against two folders held together. <i>Each tab</i> is still there for anyone who keeps one checkout with several tabs in it.</li>
+  <li>The folder's own row wears its colour too. A scheme that colours a folder's tabs and leaves the folder grey has left the label off the group it just drew.</li>
 </ul>
 
-<h3>The launcher and its palettes, rebuilt</h3>
+<h3>Getting around</h3>
 <ul>
-  <li><b>One set of parts underneath all of them.</b> Snippets, Agent Watch, Vibe History, Command History, Secrets, Ask, Remove BG and File Drop are assembled from shared chrome now — the same titled header, the same field, the same rows — so they stop each speaking their own small dialect of the same language.</li>
-  <li><b>The launcher sits on a layered surface scale,</b> the glass is deeper, and the bevel is gone.</li>
-  <li><b>Ask is back inside one card,</b> the model chooser has a card of its own, the composer is laid out as a screen rather than a strip, and Generate Image came down a size to fit what it actually shows.</li>
-  <li><b>Toasts have two rows,</b> and the countdown clock came off the ring.</li>
-  <li>The badges sheet is flat and its rows answer the pointer; Settings gained a little height; Back moved off the margin and into the header; Copy Link stopped claiming it had copied a link when it hadn't; a generated image is handed back before the upload rather than after it, so you aren't waiting on a network round trip to see your own picture.</li>
-  <li><b>Context Fill is now called Context Form Fill</b>, which is what it does.</li>
+  <li><b>⌘J leads with where you have lately been.</b> Under the agents that have stopped for you and the ones still working, the rest of the list is now the order you last had things open — so bouncing between two agents is one keystroke each way instead of a hunt. Landing anywhere is remembered, not just a jump.</li>
+  <li><b>⌃Tab steps through agents, not past them.</b> A folder with four agents in two tabs used to answer two presses and move on, leaving most of the herd unreachable from the keyboard.</li>
+  <li><b>⌘L can be typed into,</b> so the machine you want is one word away, and ⌘K names the agent on a pill and opens with it.</li>
+  <li><b>One pair of buttons opens or shuts the whole herd,</b> sitting on the first folder's row where your eye already is.</li>
 </ul>
 
-<h3>Snippets, and things you drop</h3>
+<h3>Panes you can pick up</h3>
 <ul>
-  <li><b>A snippet can carry your own picture.</b> Attach one, look at it full size, and press ⎋ to dismiss the photo rather than the whole panel.</li>
-  <li><b>See what a snippet does before you hand it to an agent</b> — the point of a snippet list is choosing, and choosing needs the thing described.</li>
-  <li><b>Drop targets behave like drops.</b> The ripple is drawn the way Material draws one, the specks gather toward the pointer instead of the middle of the panel, the shelf grew by half and lost its glow, and letting go of a file means it is gone rather than still held.</li>
-</ul>
-
-<h3>Shepherd</h3>
-<ul>
-  <li><b>⌘L opens a machines card</b>, drawn by Dax rather than borrowed from the sidebar's popover, with every machine's mark in one column and both switchers grouped by what is actually connected.</li>
-  <li><b>Switching machines cross-fades</b> instead of cutting, and the herd you leave is parked rather than demolished — so coming back is a return, not a rebuild.</li>
-  <li><b>Connections survive.</b> Server connections stay up across switches, drops and sleep; the local engine stays up; dropped panes are put back. The machine you left no longer answers for the one you arrived at, and the old herd's panes stop haunting a switch.</li>
-  <li><b>⌘N makes a project and ⌘O opens one.</b> The agent is picked in the dialog, the fields are flat, the sheet stays open while the server does the work instead of vanishing mid-thought, Open offers the folders you were lately in, and a project can be named rather than hunted for. The empty herd screen says ⌘N exists.</li>
-  <li><b>An empty pane is the button.</b> Killing a pane is quick enough to do several times in a row, and a pane you killed simply goes rather than offering to reconnect something you deliberately ended. A killed agent gets a second and a skull.</li>
-  <li><b>Moving around says what it did.</b> ⌃Tab flashes two passing arrows, ⌘-arrow says which way it just went, selecting a pane is what moves the keyboard, and the focused pane is lit.</li>
-  <li><b>The mouse behaves.</b> It stays in a terminal you're trying to read, stops stealing the New Agent list back from the keyboard, and the scroll wheel goes to the agent by default — switchable in Appearance.</li>
-  <li>⌘R opens the Remote Panel, which now wears Dax's mark; a pane's title bar is twice the height; the collapsed strip is half again as big with its icons named in the flock's own bubble and the tooltip gliding between them; picked utilities run in a terminal rather than as agents, after asking the Mac first; the split preview follows a written-down concentricity rule; and the flock's sheep are drawn as sheep rather than as camels.</li>
-  <li>Home came off the glass and in off its margins, six tools moved under the right hand, and the Discord invite sits on Home as a square you can scan.</li>
+  <li><b>Drag a pane onto another and they swap places.</b> The tile takes the hand, the hand stays closed while you carry it, and opens again when you let go.</li>
+  <li><b>Drop a file onto a pane</b> and its path goes to the agent in it. The drag is coloured by that pane's own sheep, a local drop gets a receipt, and a drop bound for a server is held while the network does its work rather than lost.</li>
+  <li><b>Paste a picture into a pane on a server and get a link back.</b> ⌘V carrying a screenshot used to paste nothing at all — there is no text on the board, so the terminal inserted an empty string and said nothing about it. Herds on your own Mac are untouched: the file is already somewhere the agent can read it.</li>
 </ul>
 
 <h3>Servers</h3>
 <ul>
-  <li><b>Add a Server asks one question at a time</b>, flat and centred rather than glassed, with <i>Add a Server</i> pinned to the floor of the dialog where you can always reach it.</li>
-  <li><b>The server sheet reconnects when you change its details</b>, instead of quietly keeping the connection made with the old ones.</li>
-  <li><b>Connecting looks like something happening</b>, wears Dax's mark, and can be called off — a connect that only ever finished or hung was a poor deal.</li>
-  <li><b>The tunnel no longer rides the shared ssh connection</b>, which is what let a second connection to the same host disturb the first.</li>
-  <li>Setup lost its glass and lays out flat; the rack glyph is drawn at twice the text size; the accent is spent once per screen rather than everywhere.</li>
+  <li><b>Open a folder on a server without touching the mouse</b> — arrows walk the list, ↩ goes in, ← climbs, and the keys are named on the panel.</li>
+  <li><b>A connection test leads with a ring</b> and keeps its log a click away, and deleting a server now actually comes off it rather than leaving what was holding it open.</li>
+  <li>A connection no longer waits on a pipe that ssh's background master will never close.</li>
 </ul>
 
-<h3>Usage and credits</h3>
+<h3>Files, and the pointer</h3>
 <ul>
-  <li><b>One-time top-ups replace bundle subscriptions.</b> Credits are one currency across the app, bought in packs when you want them, with Free and Pro above them.</li>
-  <li><b>The Usage screen is cut to the balance and the packs</b>, held to a readable column rather than stretched across the window, drawn as one list of identical rows, with top-ups behind a button instead of spread across the page.</li>
-  <li>Spending credits takes you to the Usage page rather than stopping you with a dialog.</li>
+  <li><b>⌘E answers the pointer properly:</b> a hand over a file, a caret in the search box, an arrow everywhere else. The browser is drawn over a live terminal, and the terminal was claiming the text cursor for the whole panel.</li>
+  <li><b>The search boxes can be clicked into</b> and have a caret of their own.</li>
 </ul>
 
-<h3>The intro, and the music</h3>
+<h3>Toasts, and coming back</h3>
 <ul>
-  <li><b>The intro plays on every launch</b>, not only the one launch in your life where Dax set you up — and it can be looked at again without signing out. The logo is one object owned by the window, flown by hand and measured frame by frame, and the splash's mark becomes the logo rather than being swapped for a second copy of it.</li>
-  <li><b>Credits roll properly</b>: the dedication is held, then the names go by, nothing sits at a hard edge, and it comes round again.</li>
-  <li><b>Music gets out of the way when you talk.</b> Start dictating and the volume drops at once, then walks back up over a few seconds when you stop — rather than cutting out and slamming back. Catching the dictation key needed an event tap, because NSEvent cannot see fn at all.</li>
-  <li>A keystroke can no longer silence Dax outright.</li>
-</ul>
-
-<h3>What has been taken out</h3>
-<ul>
-  <li><b>Collab is gone — Share, Join, invite codes, the guest window and the <code>dax://collab/</code> link.</b> Two people in one herd never actually worked, and the machinery holding it up broke the case that did: a coordination channel that flapped read as somebody else taking your pane, and Dax rebuilt the pane every time it did — 114 stream restarts for two panes in one sitting. The agent ran on and the window sat still. It is being planned again from scratch rather than patched. Every pane now drives its own terminal the way it did before any of it, and <b>connecting to a server is completely untouched</b>.</li>
-  <li><b>PRD Maker, Clipboard History, Command History and Suggest a Tool are shelved</b> — off the launcher, not deleted, and one line each to bring back. Clipboard History is the one worth naming: it was the only tool that ran whether or not you opened it, polling the pasteboard twice a second and writing everything you copied to disk.</li>
-  <li>Shepherd's list view is gone; the flock is the view, with an agent's title on hover.</li>
+  <li><b>Dax greets you rather than playing the intro again.</b> The intro is for the first time; coming back gets a greeting, for as long as you set it.</li>
+  <li><b>An agent's card holds for five seconds, or whatever you set</b> — there is a slider for it now. The countdown ring moves with the screen and eases at both ends, and a long toast title is cut in the middle rather than run off the edge.</li>
+  <li><b>An ordinary launch opens nothing at all,</b> instead of putting a window in front of you that you did not ask for.</li>
 </ul>
 
 <h3>Also in this release</h3>
 <ul>
+  <li>Dax keeps its own book of the herd, so a pane that comes back empty can offer itself back rather than sitting there dead.</li>
+  <li>The first-agent list says what the machine already has, and ↩ presses Start once an agent has finished installing.</li>
+  <li>A pane's uploads are counted as Image to URL and File Drop, and a dropped usage event now says so and names where it came from.</li>
   <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
 </ul>
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.38.0/Dax.zip" length="31302177" type="application/octet-stream" sparkle:edSignature="CvwMXR7BL0428eycSqNaw+Z+GyX5YndqFKxAff1BfGNYsh/6GAhFPg0chqf2uxo0BnusCpzW1WiBiLDAuvA3Aw=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.39.0/Dax.zip" length="33323292" type="application/octet-stream" sparkle:edSignature="Nsfy16pYIvbKwK43PpuMWp2dqy0iU8VCuEn3F6sL6xXOypSlARalTw/Ssk42bRPWwWi6q1sVYkbLHhzf7LbxDw=="/>
         </item>
     </channel>
 </rss>
