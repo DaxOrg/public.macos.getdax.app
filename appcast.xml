@@ -3,99 +3,12 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>2.40.0</title>
-            <pubDate>Fri, 04 Sep 2026 07:52:21 -0700</pubDate>
-            <sparkle:version>238</sparkle:version>
-            <sparkle:shortVersionString>2.40.0</sparkle:shortVersionString>
+            <title>3.0</title>
+            <pubDate>Sat, 05 Sep 2026 19:59:53 -0700</pubDate>
+            <sparkle:version>239</sparkle:version>
+            <sparkle:shortVersionString>3.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<!DOCTYPE html>
-<html>
-<body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 2.40.0</h2>
-<p>A big one, and most of it in Shepherd: a panel that shows what each agent can reach and lets you give it more, a key display for recording demos, an undo for closing an agent, and paths and links in a pane that resolve properly on a server instead of only on this Mac. The image editor every tool shares has been rebuilt, and can take the background out.</p>
-
-<h3>MCP servers, per agent</h3>
-<ul>
-  <li><b>⇧⌘M shows what the agent in this pane can reach</b> — its MCP servers, read from the agent's own configuration.</li>
-  <li><b>Add one from a catalog</b> rather than by editing a file: pick a server, and it is installed for that agent on that machine, server or this Mac.</li>
-  <li>Every server wears its own logo, on a ground it can be seen on, and signing in happens in the panel rather than somewhere else.</li>
-</ul>
-
-<h3>Show the keys you press — ⌥⌘K</h3>
-<ul>
-  <li><b>For recording a demo.</b> Hold a chord and it appears on screen as keycaps, captioned with what it did in the same words the ⌘/ card uses.</li>
-  <li><b>Chords only, and that is a safety property</b> — nothing without ⌘, ⌃ or ⌥ is ever drawn, so a prompt, a path or a password typed into a pane cannot reach the video.</li>
-  <li><b>Drag the pill to place it</b> in a picture of the window it will be in, with nine snap targets; dropping it shows you the real thing, full size, where it will actually sit.</li>
-  <li>Holding the dictation key shows a red dot and names the agent the words will land in — the one part of a recording a viewer cannot otherwise work out.</li>
-</ul>
-
-<h3>Reopen the agent you just closed — ⇧⌘W</h3>
-<ul>
-  <li><b>⌘W closes an agent; ⇧⌘W brings it back,</b> in the same conversation, with its own name and folder and the permissions flag it was started with.</li>
-  <li><b>Closing a tab or a project counts too</b> — ⇧⌘W walks back through them one at a time, rebuilding the tab or reopening the folder if it has to.</li>
-  <li>Twenty deep, kept for a fortnight, and remembered across quitting Dax: closing the wrong agent on Friday and wanting it on Monday is the same mistake.</li>
-</ul>
-
-<h3>Paths and links in a pane, on a server</h3>
-<ul>
-  <li><b>A <code>~</code> now expands against the machine the path is on.</b> Every tilde path an agent printed on a server used to be resolved against your Mac's home and looked for on the server, where it has never been — so those links never even lit up.</li>
-  <li><b>A file outside the project is found.</b> Resolution climbs to the root cheaply, and when that misses it searches — the git root first and deepest, then wider and shallower, then the places a server keeps work. Several answers get a picker rather than a guess.</li>
-  <li><b>One search teaches the pane where it is standing,</b> so the next path resolves instantly.</li>
-  <li><b>A link wrapped across lines opens whole on a server too.</b> Whether a row had run out of room was measured against this window's width, which is only the wrap width when the pane belongs to this Mac — so multi-row links simply did not work on a remote pane.</li>
-  <li>⌘-clicking a file on a server downloads it and previews it here.</li>
-</ul>
-
-<h3>The image editor, rebuilt</h3>
-<ul>
-  <li><b>A markup bar in groups</b> — tools, size, colour, done — instead of eleven controls in one row.</li>
-  <li><b>Remove Background,</b> on the bar. Press it again and the background comes back, with everything you have drawn still where you drew it.</li>
-  <li><b>Rounded corners, by however much you say</b> — a slider, on by default at 1.5%, remembered for the next picture.</li>
-  <li>One colour well that opens the whole palette, and 1–7 still pick a colour directly.</li>
-</ul>
-
-<h3>Opening a folder</h3>
-<ul>
-  <li><b>A folder already open is switched to, not opened again.</b> ⌘O, the server's browser, the Recent menu, the home screen's list, ⌘J's folder rows and a folder dropped on the window all used to make a second project rooted at the same path with an empty terminal in it.</li>
-  <li>It lands on an agent's pane rather than a spare shell, and answering "which agent?" now puts the keyboard in the pane.</li>
-  <li><b>⇧⌘N clones a repo</b> — paste a URL and it lands in your projects folder and opens.</li>
-</ul>
-
-<h3>Around the window</h3>
-<ul>
-  <li>⌘/ is five tabs rather than one very tall column, and the empty screen says <i>Show Keyboard Shortcuts</i> where you would look for it.</li>
-  <li>Both machine switchers put This Mac first and order servers by how recently you connected, and neither counts sleeping agents.</li>
-  <li>Closing an agent shows a door on the way out rather than a skull, and tab chips have a close button.</li>
-  <li>Agent Watch sorts into three lists and draws the herd as sheep, and can watch the agents on a server.</li>
-</ul>
-
-<h3>Selecting, copying and links</h3>
-<ul>
-  <li><b>A selection is copied when the mouse comes up,</b> rather than needing a second deliberate step for something you have already finished doing.</li>
-  <li><b>Dragging past the edge scrolls the pane,</b> so a selection can run past what is on screen instead of stopping at it.</li>
-  <li>Copy carries its formatting where that helps — and the plain copy loses the table borders, which were never text you wanted in your paste.</li>
-  <li>Hovering a link says ⌘-click, and it lights in its own pane's colour, all of it rather than part.</li>
-</ul>
-
-<h3>New Project</h3>
-<ul>
-  <li><b>The project appears the moment herdr says it exists,</b> rather than after the sheet has finished everything else.</li>
-  <li><b>The sheet waits for the work it started,</b> and says which part is taking the time.</li>
-  <li><b>Cancel actually calls it off</b> — it used to half-end a create it could not stop.</li>
-</ul>
-
-<h3>Also in this release</h3>
-<ul>
-  <li>A command that has just been handed a secret runs sandboxed, and a pasted instruction can no longer teach an agent to print one.</li>
-  <li>A second Shepherd window runs its own herdr session, instead of the two fighting over one.</li>
-  <li>You can reach an agent on this Mac while Shepherd is showing a server.</li>
-  <li>A pane can arrive without a working directory instead of refusing to arrive.</li>
-  <li>A server connection test says three words where it used to say seventy-five lines.</li>
-  <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
-</ul>
-</body>
-</html>
-]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v2.40.0/Dax.zip" length="35464691" type="application/octet-stream" sparkle:edSignature="Syj1IiZlJnkgnN714+dSj3mO9Mt8OEc0DWW8LzkqygJLI7FbOKW+lw2eS/FWCGsz017WINz39fT0ZKFKwPHDAA=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.0/Dax.zip" length="35558713" type="application/octet-stream" sparkle:edSignature="TgyUL6ZNk5qXwcywRaPROqs5MHSE+Ft1bhV/iPcRjGrDRii/5HMWeQYbqfKvFT8bN9eVZ1KGgB6tW2jXCG1oAg=="/>
         </item>
     </channel>
 </rss>
