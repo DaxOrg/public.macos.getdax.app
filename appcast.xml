@@ -3,12 +3,76 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>3.0.1</title>
-            <pubDate>Sat, 05 Sep 2026 23:55:06 -0700</pubDate>
-            <sparkle:version>240</sparkle:version>
-            <sparkle:shortVersionString>3.0.1</sparkle:shortVersionString>
+            <title>3.1.0</title>
+            <pubDate>Tue, 08 Sep 2026 23:09:18 -0700</pubDate>
+            <sparkle:version>241</sparkle:version>
+            <sparkle:shortVersionString>3.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.0.1/Dax.zip" length="35574105" type="application/octet-stream" sparkle:edSignature="tDVadoyrJoo54Hm43KphWYFzko3Iht5/kiw9ufzz/I2g4SP+K+LAOU/dflPIeZYwBDZUjIIBtluX3FmuziM5Aw=="/>
+            <description><![CDATA[<!DOCTYPE html>
+<html>
+<body style="font-family: -apple-system, sans-serif; font-size: 13px;">
+<h2>What's new in 3.1.0</h2>
+<p>Shepherd panes can be web browsers now — a real page beside the agent that is working on it, on this Mac or on a server. One Claude can direct others as panes of their own. A pane can be handed the last session that ran in its folder. And the Remote Panel's list of open ports has become a Security tab that will scan the box and tell you what is wrong with it.</p>
+
+<h3>A browser in a pane — ⌘G</h3>
+<ul>
+  <li><b>A globe in a pane's title bar turns it into a browser and back,</b> drawn over an agent that goes on running underneath — the third overlay a tile can wear, after Files and MCP.</li>
+  <li><b>Or open a browser as a pane of its own,</b> from the New Panel card, beside the agents rather than over one.</li>
+  <li><b>An agent can open one itself,</b> in a pane beside its own, and say what it wants you to look at.</li>
+  <li><b>The page is kept, not the address.</b> Toggling back to the agent and returning lands on the same page, scrolled where you left it, with its history behind it — and a server's pane survives a reconnect the same way.</li>
+  <li>The pane is named after the page it is showing. A typed <code>index.html</code> opens as that file, and an address written without its scheme opens as https.</li>
+  <li>Hovering a link in a terminal now shows what it points at while you are still deciding whether to open it.</li>
+</ul>
+
+<h3>One Claude directing others — /omd</h3>
+<ul>
+  <li><b>Type <code>/omd</code> in a session and it becomes a master:</b> it plans the split, Dax draws the panes it is about to open over the right half of that tile, and you press return.</li>
+  <li><b>Each stream opens as a real Claude session</b> in its own pane, its own git worktree and its own branch, already knowing whose it is and who to report to.</li>
+  <li>Nothing new is invented to carry it — herdr already splits a pane and starts an agent in it, and Claude Code already gives every session a name and a way to reach another. What was missing was the relationship, and that is what this adds.</li>
+</ul>
+
+<h3>Hand a pane the last session that ran there</h3>
+<ul>
+  <li><b>A clock button on the tile lists every session that has run in that pane's folder,</b> grouped by when, and one click types the chosen session's digest into the prompt.</li>
+  <li><b>Load, not copy</b> — the clipboard never sees it, and Return is left for you to press.</li>
+  <li>Unlike Copy Context, the old pane does not have to still be open.</li>
+</ul>
+
+<h3>The Remote Panel's Security tab</h3>
+<ul>
+  <li><b>Services &amp; Ports is now Security,</b> with that list as its first pane and a scan as its second. The list says what is on the box; the scan says whether any of it is a problem.</li>
+  <li><b>It checks the firewall, what the internet can reach, SSH, accounts, patching and hardening</b> — in one connection — and grades the result: databases on 0.0.0.0, root login over SSH, empty passwords, extra UID 0 accounts, unattended sudo, pending security updates, world-writable files in /etc, and containers publishing past a firewall that says they can't.</li>
+  <li><b>It only reads.</b> Every finding carries the command <i>you</i> would run, to copy — never a button that runs it.</li>
+  <li><b>A check it wasn't allowed to run says so</b> rather than passing, and if too many come back that way the grade is withheld. Most of this needs root, and an A earned by not being permitted to look would be worse than no scan at all.</li>
+</ul>
+
+<h3>⌘-clicking what an agent printed</h3>
+<ul>
+  <li><b><code>Foo.swift:42:8</code> opens at line 42, column 8</b> — the numbers were already being read to find where the filename ended, and then thrown away.</li>
+  <li>The line number lights up as part of the link rather than being left outside it.</li>
+  <li>A bare filename with no path is ⌘-clickable when the file is really there.</li>
+</ul>
+
+<h3>Choosing an agent</h3>
+<ul>
+  <li><b>All nineteen descriptions are rewritten</b> to say whose the agent is in words you have already met — Codex is "Made by OpenAI, the company behind ChatGPT" — instead of naming a shape of software to people who already know the shape.</li>
+  <li>Each row says who makes it, and Codex is called OpenAI Codex.</li>
+</ul>
+
+<h3>Around the app</h3>
+<ul>
+  <li><b>An upload can be called off.</b> Hover the File Drop well while it is working and the ring becomes an ×; only the well cancels, so clicking anywhere else still opens the shelf.</li>
+  <li><b>A server connection test puts its answer over the button that asked for it.</b></li>
+  <li>The account row opens Home rather than Settings, and the annotation editor gives the keyboard back when it closes.</li>
+  <li>A toast about an agent on a server now asks whether Dax is connected to that machine <i>now</i>, not whether this window has ever visited it.</li>
+  <li>The Pro card no longer claims remote servers as a paid feature — it never was one, in either direction.</li>
+  <li>Say thanks to an agent and it says something back.</li>
+  <li>Signed, notarized, universal (Apple Silicon &amp; Intel), macOS 14+.</li>
+</ul>
+</body>
+</html>
+]]></description>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.1.0/Dax.zip" length="36956726" type="application/octet-stream" sparkle:edSignature="AK4P51gyxQZyM7rxuK+JuTnJI6iig/5L1GpRxABJoQdG3d8OjY6YdxwJA3FQDp1kg2HDvVolG3NLv1z3rcr/Aw=="/>
         </item>
     </channel>
 </rss>
