@@ -3,107 +3,23 @@
     <channel>
         <title>Dax</title>
         <item>
-            <title>3.3.0</title>
-            <pubDate>Tue, 13 Oct 2026 11:10:50 +0000</pubDate>
-            <sparkle:version>244</sparkle:version>
-            <sparkle:shortVersionString>3.3.0</sparkle:shortVersionString>
+            <title>3.3.1</title>
+            <pubDate>Thu, 22 Oct 2026 11:29:09 +0000</pubDate>
+            <sparkle:version>245</sparkle:version>
+            <sparkle:shortVersionString>3.3.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!DOCTYPE html>
 <html>
 <body style="font-family: -apple-system, sans-serif; font-size: 13px;">
-<h2>What's new in 3.3.0</h2>
-<p>The biggest release since Shepherd arrived. Two people can share a herd in a room, a pane's browser is a real browser with tabs, and your agents now have a set of Dax tools of their own: they can open and drive pages, generate images, raise toasts, upload files, record video and even run a worker herd. Generate Image became a conversation, the video player learned to record and take feedback, the git panel became a feed of who did what, and the Accelerator SDK is at 1.0. This covers everything since 3.2.0, including the 3.2.1 Setapp changes.</p>
+<h2>What's new in 3.3.1</h2>
+<p>Dax is now signed and notarized under a new Apple Developer account. Nothing about how Dax works has changed, but macOS treats an app from a new signer as a new app, so you will see a few one-time prompts after this update.</p>
 
-<h3>Rooms: share a herd with someone else</h3>
+<h3>What to expect after updating</h3>
 <ul>
-  <li><b>A server or a Mac becomes one room, with equal partners.</b> Share a herd and the other person watches your agents, types into them and starts new ones from their own Dax. A room runs on Cloudflare, so nobody needs herdr or an SSH login of their own.</li>
-  <li><b>Each person gets their own view.</b> Panes are drawn at the size of the person looking at them, zoom is kept per participant, and a room pane has one cursor and an Enter it answers. Seats show profile photos, there is a chat, and anyone can react to a pane with a heart, a fire, a clap or any emoji from a picker you arrange.</li>
-  <li><b>Ports come along.</b> A host can share ports and hand out relay tickets; the guest sees them on their own localhost, encrypted through Dax's relay.</li>
-  <li><b>Server rooms are on every plan.</b> Live sessions hosted from a Mac are shelved for now. The antenna in the header is green and pulsing while you are connected, and its popover is a card with the invite in it.</li>
-  <li><b>Built on herdr 0.9's multiplayer SSH transport,</b> with the older FastPass transport removed. A publisher that is stuck out of its room is replaced, a room survives a deploy, and a guest's pane no longer resizes the host.</li>
-</ul>
-
-<h3>Servers over SSH</h3>
-<ul>
-  <li><b>A fast path for connecting,</b> routes detected on each connection, and a relay that carries a server's sockets when its sshd refuses to forward them.</li>
-  <li><b>Recovery that retries properly.</b> An outage no longer lands on the error screen, and remote prompts stay visible while the session companion is provisioned.</li>
-  <li><b>Claude and Codex install on restricted servers,</b> including ones with server-managed shell profiles, and an npm-installed Codex keeps itself up to date.</li>
-  <li><b>The caret follows the keyboard.</b> The remote pane you are typing in shows its caret, remote panes scroll by lines rather than trackpad points, and a pane repaints from herdr's screen once a resize settles.</li>
-  <li><b>Save a tab when you close it,</b> and it comes back when its folder opens, on the same machine it was on.</li>
-</ul>
-
-<h3>The browser in a pane</h3>
-<ul>
-  <li><b>Tabs in the pane's title bar, drawn the way Chrome draws them.</b> Drag to reorder, hover for the pill, ⌘W closes a tab before the pane, and ⌘T opens a browser tab when a browser is showing. A page's popups open as the window they asked for, so Google sign-in works.</li>
-  <li><b>It behaves like a browser.</b> ⌘+, ⌘− and ⌘0 zoom the page, a page can go full screen inside its pane and stays that way across a restart, and a load failure draws a real error page. Downloads land in the pane's folder, with a right-click menu and a toolbar icon.</li>
-  <li><b>A site-data popover</b> shows the page's cookies as a flat, editable table, with Security and Console tabs, and the Dax D in place of the old cookie.</li>
-  <li><b>Play a video a pane is showing,</b> and download it from the rack.</li>
-</ul>
-
-<h3>Agents that drive the browser</h3>
-<ul>
-  <li><b>The dax-browser tools open a page beside the agent,</b> read it, click, type, scroll, switch between tabs, take screenshots, read the console and close what they opened, without pulling you away from what you are doing. One call lists every browser and every tab across your Shepherd windows.</li>
-  <li><b>An agent can sign the browser in with your own cookies,</b> when you let it.</li>
-  <li><b>You can see when an agent is driving.</b> The pane's edge glows in the tab's tint, a click lands with a ripple, and the agent's cursor is the plain pointer you know, with a small black tag trailing it that carries the agent's mark and name. The cursor glides along an eased arc and lands clicks on arrival.</li>
-</ul>
-
-<h3>Dax tools for your agents</h3>
-<ul>
-  <li><b>dax-herd replaces /omd.</b> One Claude plans a split and opens worker sessions as live panes beside it, each in its own worktree and branch.</li>
-  <li><b>dax-ask, dax-shepherd, dax-image, dax-upload, dax-notify, dax-media and dax-accel-sdk</b> are new. Between them an agent can ask you a question, drive the Shepherd window, generate an image, send a file up and hand you the link, raise a toast, run the recorder, and write an accelerator against the SDK.</li>
-  <li><b>The MCP panel manages servers properly:</b> connect, disconnect, reconnect and confirm-remove, one paste box that takes any snippet and shows what it understood, Codex plugins and live Connected / Not connected status, and a Fix button for servers that fail to start. A newly installed server reaches the running agent without a restart, and Dax restarts a stale server instead of reporting a sign-out.</li>
-</ul>
-
-<h3>Agents that tell you what they need</h3>
-<ul>
-  <li><b>A Jev layer, off by default,</b> can read a quiet agent's screen and move it into Needs You when it is waiting on a dialog or a question that the built-in detection misses. The setting says exactly what is sent: the last 30 lines, ANSI stripped, through Dax's servers when you are signed in. It never moves an agent the other way.</li>
-  <li><b>A pane that needs you says so.</b> It dims and softly blurs, with a bobbing exclamation mark in the tab's colour, and you set the strength in Appearance.</li>
-  <li><b>Swap a pane's agent in place,</b> continue a pane's conversation in another agent, and resume restored agents in YOLO mode if you choose to, with a restart button. Copy Context is offered on Codex panes that never reported a session.</li>
-</ul>
-
-<h3>Generate Image</h3>
-<ul>
-  <li><b>It is a conversation now.</b> Each message edits what it just made, original photos travel with every edit, and history pictures attach to the composer.</li>
-  <li><b>Characters:</b> save photos of yourself once and reuse them. Take a reference photo from the camera inside the window.</li>
-  <li><b>YouTube thumbnails:</b> a style with a shelf of 46 creator thumbnails, and annotation on attachments. An App icon mode sits beside it.</li>
-  <li><b>Minimize a running generation</b> into a queue in the top-right. A picture you set aside waits in the corner as a square card with Markup, Edit, Copy and Close, a one-minute clock, and a flick to dismiss.</li>
-  <li><b>An agent's image arrives large on its toast,</b> stacked bottom-right as they land and marked with the agent's icon.</li>
-</ul>
-
-<h3>Video, recording and the Media Center</h3>
-<ul>
-  <li><b>The video player is the Media Center,</b> a mode a terminal pane can take. Paste a link or drop a file; hover a card to scrub it; copy the video file from the header.</li>
-  <li><b>Feedback mode</b> lets you leave timed notes on a video, saved as <code>.dax-video-feedback</code>, with a sideways Magic Mouse swipe to scrub.</li>
-  <li><b>Record from a pane,</b> Photo Booth style: takes land in the pane's folder, group into sessions, and can be flagged final, reordered and exported as a cut. There are audio meters, a mic test and multi-mic takes, and a teleprompter that follows your voice, with zoom and a remembered place.</li>
-</ul>
-
-<h3>Files, git and projects</h3>
-<ul>
-  <li><b>The file browser</b> gains a Finder tab, Recent previews, multi-select, paste from the right-click menu, a Share submenu, and an option to inject a file's path or link into the terminal.</li>
-  <li><b>The git panel is a feed of who did what,</b> drawn as a timeline with each author's face, an author card on click, and a draggable commits column. It shows only on a folder that is a repository, and offers the repositories inside a folder that isn't.</li>
-  <li><b>Riftri ships with Dax,</b> and the panel shows a repository's riftrees and the disk space they save. Reclaim some and a toast celebrates it.</li>
-</ul>
-
-<h3>Accelerators, the menu and Settings</h3>
-<ul>
-  <li><b>Accelerator SDK 1.0.</b> The whole API is typed, three samples cover it, and native JavaScript extensions are supported. Tools are called accelerators everywhere you read them.</li>
-  <li><b>The menu bar panel is the app's menu:</b> three tiles for Home, Shepherd and the launcher, with rows for the rest. The accelerators have their own panel.</li>
-  <li><b>Settings has a Dax tab</b> for Shepherd's own settings, the app's switches and storage, with Privacy folded into General.</li>
-  <li><b>The jump card</b> (⌘K) leads with the agent you were just in, keeps a project together when one of its agents runs, and has a button in the sidebar footer. New Panel can search the web for words that match nothing.</li>
-  <li><b>Bring your own storage.</b> The link tools can keep files in your own S3 or R2 bucket, or in Google Drive, and File Drop streams uploads from disk with a 10 GB limit on Pro.</li>
-  <li><b>Motion is consistent.</b> The app's windows, panes, rooms and panels move at shared speeds.</li>
-</ul>
-
-<h3>Plans and credits</h3>
-<ul>
-  <li>New direct-build users pick Free or Pro during setup. Free includes 15 AI credits, and credits show in the menu bar panel, where you can buy more. When a surface runs out, the same surface offers the way forward.</li>
-  <li><b>Setapp:</b> AI calls are billed through the Setapp AI Gateway and the menu shows the Setapp credit balance. herdr is built in, so Shepherd needs no install, and the lid daemon accepts the Setapp build.</li>
-</ul>
-
-<h3>Shelved and removed</h3>
-<ul>
-  <li>Clipboard History, Agent Watch, Open Project, Search Files and Tile Windows are shelved from the launcher and Settings. Phone simulator panes are switched off for now.</li>
-  <li>Sentry is removed. Any number of Daxes can run at once, so the "already running" alert is gone.</li>
+  <li><b>macOS may ask for Dax's permissions again.</b> Accessibility, Screen Recording, Microphone and Camera are remembered per signer. Approve them once in System Settings &rarr; Privacy &amp; Security and they stay.</li>
+  <li><b>You may be asked to allow Dax in Login Items.</b> That is the lid daemon, which now trusts the new signature.</li>
+  <li><b>Your Keychain may ask once</b> whether Dax can use a saved item. Choose Always Allow.</li>
+  <li>Your tabs, settings, characters and files are untouched.</li>
 </ul>
 
 <h3>Around the app</h3>
@@ -113,7 +29,7 @@
 </body>
 </html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.3.0/Dax.zip" length="76516035" type="application/octet-stream" sparkle:edSignature="ZorAmh3RonJTZZijahukpIEMwyqG5QBBzFW+25dN/AgowyvXGvRu1QbHTBHTybD88Y0ttUrZmb+2mCTKyCuHBQ=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.3.1/Dax.zip" length="78155140" type="application/octet-stream" sparkle:edSignature="n0hkHEzzZzOeq8YWh7BSWy2raIbEmvwZX9yxv3BweYwCDj1iNRKeUvU+PXmqh4H6fWFtHFyCpOWXfMZhq3hCDA=="/>
         </item>
     </channel>
 </rss>
