@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>DaxPro</title>
+        <item>
+            <title>3.4.1</title>
+            <pubDate>Sun, 25 Oct 2026 07:11:50 +0000</pubDate>
+            <sparkle:version>250</sparkle:version>
+            <sparkle:shortVersionString>3.4.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Dax 3.4.1</title>
+<body><h1>Dax 3.4.1</h1><ul>
+<li>Shepherd opens every agent in its terminal. The graphical chat view is paused for this release.</li>
+<li>The mouse button is back in each pane: switch between scrolling the agent and browsing pane history. ⌘S does the same, and Settings chooses the default for new panes.</li>
+<li>The browser’s Scoop panel chooses readable text for your accent color, including pale accents and light appearance.</li>
+<li>Lid-close support is paused. Dax no longer offers helper installation, repair, or lid settings, and setup skips the helper step.</li>
+<li>Includes the new DaxPro app identity, permission setup, and AI video editor from the prepared 3.4 update.</li>
+</ul><p>Upgrading from the earlier Dax app requires installing DaxPro. Existing projects, settings, history, and saved secrets are preserved. The previous app's update feed is unchanged.</p>
+<p>This update does not change existing macOS sleep settings. If you previously used Dax to disable sleep, review the <a href="https://github.com/DaxOrg/public.macos.getdax.app/releases/tag/v3.4.1">recovery guidance in the release notes</a> before removing an older helper.</p>
+</body></html>
+]]></description>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.4.1/Dax.zip" length="85680150" type="application/octet-stream" sparkle:edSignature="HnZXAGCVjJNyuJYZUqvSJwG2xJuaeqI/s02r6EnOqI/FVqg+JzPcak5t0QKe8o7j2sv7CPahmcvyv+1sDdbgCw=="/>
+        </item>
+    </channel>
+</rss>
