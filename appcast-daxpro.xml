@@ -3,24 +3,23 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.4.1</title>
-            <pubDate>Sun, 25 Oct 2026 07:11:50 +0000</pubDate>
-            <sparkle:version>250</sparkle:version>
-            <sparkle:shortVersionString>3.4.1</sparkle:shortVersionString>
+            <title>3.4.2</title>
+            <pubDate>Sun, 25 Oct 2026 12:05:11 +0000</pubDate>
+            <sparkle:version>251</sparkle:version>
+            <sparkle:shortVersionString>3.4.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<!doctype html>
-<html lang="en"><meta charset="utf-8"><title>Dax 3.4.1</title>
-<body><h1>Dax 3.4.1</h1><ul>
-<li>Shepherd opens every agent in its terminal. The graphical chat view is paused for this release.</li>
-<li>The mouse button is back in each pane: switch between scrolling the agent and browsing pane history. ⌘S does the same, and Settings chooses the default for new panes.</li>
-<li>The browser’s Scoop panel chooses readable text for your accent color, including pale accents and light appearance.</li>
-<li>Lid-close support is paused. Dax no longer offers helper installation, repair, or lid settings, and setup skips the helper step.</li>
-<li>Includes the new DaxPro app identity, permission setup, and AI video editor from the prepared 3.4 update.</li>
-</ul><p>Upgrading from the earlier Dax app requires installing DaxPro. Existing projects, settings, history, and saved secrets are preserved. The previous app's update feed is unchanged.</p>
-<p>This update does not change existing macOS sleep settings. If you previously used Dax to disable sleep, review the <a href="https://github.com/DaxOrg/public.macos.getdax.app/releases/tag/v3.4.1">recovery guidance in the release notes</a> before removing an older helper.</p>
-</body></html>
+            <description><![CDATA[<!doctype html><html lang="en"><meta charset="utf-8"><title>Dax 3.4.2</title><body><h1>Dax 3.4.2</h1><ul>
+<li>“Open only the folder you’re in” is on by default for new setups and settings without a saved choice. Existing choices are preserved.</li>
+<li>The empty window focuses on its folder button and keyboard-shortcuts link. The new-project instruction and Powered by footer are removed.</li>
+<li>Ask AI starts new conversations with web search enabled. You can still change the mode during a conversation.</li>
+<li>Screen snipping clears the Dax palette backdrop before capturing and keeps it clear through selection, completion, and cancellation. This covers Ask AI, Image Ask, and Generate Image.</li>
+<li>The New Panel picker has the updated robot icon for Agents.</li>
+<li>The browser’s HTTPS lock opens passkey guidance and an explicit Safari handoff. Native arbitrary-site passkeys inside Dax still require Apple’s managed browser entitlement approval; this release does not claim in-app Touch ID registration.</li>
+<li>Retains 3.4.1’s mouse scroll control, improved Scoop accent contrast, and paused graphical chat and lid-close support.</li>
+</ul><p>Coming from the previous Dax app identity? Install DaxPro with the DMG or PKG. Existing DaxPro installations can update through the new feed.</p>
+<p>Existing macOS sleep settings remain unchanged. Previous lid-helper users can review the <a href="https://github.com/DaxOrg/public.macos.getdax.app/releases/tag/v3.4.1">3.4.1 recovery guidance</a>.</p></body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.4.1/Dax.zip" length="85680150" type="application/octet-stream" sparkle:edSignature="HnZXAGCVjJNyuJYZUqvSJwG2xJuaeqI/s02r6EnOqI/FVqg+JzPcak5t0QKe8o7j2sv7CPahmcvyv+1sDdbgCw=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.4.2/Dax.zip" length="85746882" type="application/octet-stream" sparkle:edSignature="X3eVQEnNVkAQU51hQTm6sh7+6C2kxXCeuCfK6fKNYKeP3GI27lg8ocTl6RX4lDZlCJtYgpDItpp6VNM+3jo5BA=="/>
         </item>
     </channel>
 </rss>
