@@ -3,23 +3,20 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.4.2</title>
-            <pubDate>Sun, 25 Oct 2026 12:05:11 +0000</pubDate>
-            <sparkle:version>251</sparkle:version>
-            <sparkle:shortVersionString>3.4.2</sparkle:shortVersionString>
+            <title>3.5.0</title>
+            <pubDate>Mon, 26 Oct 2026 00:12:20 +0000</pubDate>
+            <sparkle:version>252</sparkle:version>
+            <sparkle:shortVersionString>3.5.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<!doctype html><html lang="en"><meta charset="utf-8"><title>Dax 3.4.2</title><body><h1>Dax 3.4.2</h1><ul>
-<li>“Open only the folder you’re in” is on by default for new setups and settings without a saved choice. Existing choices are preserved.</li>
-<li>The empty window focuses on its folder button and keyboard-shortcuts link. The new-project instruction and Powered by footer are removed.</li>
-<li>Ask AI starts new conversations with web search enabled. You can still change the mode during a conversation.</li>
-<li>Screen snipping clears the Dax palette backdrop before capturing and keeps it clear through selection, completion, and cancellation. This covers Ask AI, Image Ask, and Generate Image.</li>
-<li>The New Panel picker has the updated robot icon for Agents.</li>
-<li>The browser’s HTTPS lock opens passkey guidance and an explicit Safari handoff. Native arbitrary-site passkeys inside Dax still require Apple’s managed browser entitlement approval; this release does not claim in-app Touch ID registration.</li>
-<li>Retains 3.4.1’s mouse scroll control, improved Scoop accent contrast, and paused graphical chat and lid-close support.</li>
-</ul><p>Coming from the previous Dax app identity? Install DaxPro with the DMG or PKG. Existing DaxPro installations can update through the new feed.</p>
-<p>Existing macOS sleep settings remain unchanged. Previous lid-helper users can review the <a href="https://github.com/DaxOrg/public.macos.getdax.app/releases/tag/v3.4.1">3.4.1 recovery guidance</a>.</p></body></html>
+            <description><![CDATA[<!doctype html><html lang="en"><meta charset="utf-8"><title>Dax 3.5.0</title><body><h1>Dax 3.5.0</h1><ul>
+<li>Screen Markup: press Control–Option–M to capture a whole display and draw on it. Pen, highlighter, arrow, box, blur and text, with undo and redo, in a frozen capture or live over what the screen is doing. The result lands in the bottom-right image stack and uploads on its own, so a link is ready when you need one.</li>
+<li>Screen Markup has its own Settings page: starting mode (frozen or live), which display, the first drawing tool, upload, keeping a copy in Pictures, and copying the image to the clipboard straight away. The earlier Control–Option–Shift–M shortcut moves to Control–Option–M automatically if nothing else has claimed it.</li>
+<li>Agent settings are grouped into General, Tools and Permissions. Permission cards and agent connections are explained where you switch them on, with each agent’s hook status beside it.</li>
+<li>A pane’s Copy Context and Copy Resume Command now live under Load Context instead of their own menu.</li>
+<li>Retains 3.4.2’s sidebar, Ask AI, snipping and passkey behaviour, and 3.4.1’s paused graphical chat and lid-close support.</li>
+</ul><p>Coming from the previous Dax app identity? Install DaxPro with the DMG or PKG. Existing DaxPro installations update through the new feed.</p></body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.4.2/Dax.zip" length="85746882" type="application/octet-stream" sparkle:edSignature="X3eVQEnNVkAQU51hQTm6sh7+6C2kxXCeuCfK6fKNYKeP3GI27lg8ocTl6RX4lDZlCJtYgpDItpp6VNM+3jo5BA=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.5.0/Dax.zip" length="86039568" type="application/octet-stream" sparkle:edSignature="sSLP9xc1uTuRQOC3y45h6q049TLVQOJPt0KvRbJMfoie/B8In2IbppbJVxNfHAfEP1Fulrl9sAmTRcLSf86eDQ=="/>
         </item>
     </channel>
 </rss>
