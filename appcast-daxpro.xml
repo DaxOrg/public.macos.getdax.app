@@ -3,20 +3,21 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.5.0</title>
-            <pubDate>Mon, 26 Oct 2026 00:12:20 +0000</pubDate>
-            <sparkle:version>252</sparkle:version>
-            <sparkle:shortVersionString>3.5.0</sparkle:shortVersionString>
+            <title>3.6.0</title>
+            <pubDate>Sat, 31 Oct 2026 02:25:37 +0000</pubDate>
+            <sparkle:version>253</sparkle:version>
+            <sparkle:shortVersionString>3.6.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<!doctype html><html lang="en"><meta charset="utf-8"><title>Dax 3.5.0</title><body><h1>Dax 3.5.0</h1><ul>
-<li>Screen Markup: press Control–Option–M to capture a whole display and draw on it. Pen, highlighter, arrow, box, blur and text, with undo and redo, in a frozen capture or live over what the screen is doing. The result lands in the bottom-right image stack and uploads on its own, so a link is ready when you need one.</li>
-<li>Screen Markup has its own Settings page: starting mode (frozen or live), which display, the first drawing tool, upload, keeping a copy in Pictures, and copying the image to the clipboard straight away. The earlier Control–Option–Shift–M shortcut moves to Control–Option–M automatically if nothing else has claimed it.</li>
-<li>Agent settings are grouped into General, Tools and Permissions. Permission cards and agent connections are explained where you switch them on, with each agent’s hook status beside it.</li>
-<li>A pane’s Copy Context and Copy Resume Command now live under Load Context instead of their own menu.</li>
-<li>Retains 3.4.2’s sidebar, Ask AI, snipping and passkey behaviour, and 3.4.1’s paused graphical chat and lid-close support.</li>
-</ul><p>Coming from the previous Dax app identity? Install DaxPro with the DMG or PKG. Existing DaxPro installations update through the new feed.</p></body></html>
+            <description><![CDATA[<!doctype html><html lang="en"><meta charset="utf-8"><title>Dax 3.6.0</title><body><h1>Dax 3.6.0</h1><ul>
+<li>Your iPhone: pair it from the phone button in Shepherd’s toolbar and Dax’s cards arrive as notifications. Answer an agent’s approval or question from the phone, follow your panes, and share a screenshot or file straight into an agent.</li>
+<li>The File Drawer has a Finder of its own. Click the Finder face in its header to browse your folders inside the drawer and drag files out without opening Finder. The drawer also gained a text mode, and you can check several tiles to drag them together.</li>
+<li>Shepherd’s pane titles say what each agent is doing. They follow the agent’s own title when it sets one and Dax’s short summary of what you asked when it doesn’t, and update as soon as you send something new. A pane with nothing to say yet shows the agent’s name.</li>
+<li>DeepSeek joins Shepherd as a first-class agent, and a failed agent install shows its steps with a Fix with Claude or Codex button.</li>
+<li>Agents can see every coding agent’s past sessions on this Mac, and get new tools to mark up pictures and the screen. Screen control now shows a visible cursor.</li>
+<li>Screen Markup has a ruler, and the image viewer pages through several pictures.</li>
+</ul></body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.5.0/Dax.zip" length="86039568" type="application/octet-stream" sparkle:edSignature="sSLP9xc1uTuRQOC3y45h6q049TLVQOJPt0KvRbJMfoie/B8In2IbppbJVxNfHAfEP1Fulrl9sAmTRcLSf86eDQ=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.6.0/Dax.zip" length="126181290" type="application/octet-stream" sparkle:edSignature="3wcB6slt8U2FyYdGOqvQP2uN8wObQkzpLrYs09NY1JRf7+00fxjT+X9CeO2ilE0to5x1ou5o0kZyjDW/D3rTBw=="/>
         </item>
     </channel>
 </rss>
