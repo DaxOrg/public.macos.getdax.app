@@ -3,27 +3,26 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.8.0</title>
-            <pubDate>Fri, 06 Nov 2026 01:54:53 +0000</pubDate>
-            <sparkle:version>255</sparkle:version>
-            <sparkle:shortVersionString>3.8.0</sparkle:shortVersionString>
+            <title>3.8.5</title>
+            <pubDate>Fri, 06 Nov 2026 05:27:11 +0000</pubDate>
+            <sparkle:version>256</sparkle:version>
+            <sparkle:shortVersionString>3.8.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!doctype html>
-<html lang="en"><meta charset="utf-8"><title>Dax 3.8.0</title><body>
-<h1>Dax 3.8.0</h1>
+<html lang="en"><meta charset="utf-8"><title>Dax 3.8.5</title><body>
+<h1>Dax 3.8.5</h1>
 <ul>
-<li>Background updates now finish installing when your work windows are closed and the Mac is idle. Dax waits for active agents, recordings, uploads and generations, then lets the updater install and relaunch.</li>
-<li>Dax checks for the latest compatible release at launch and hourly when automatic updates are enabled. Updates that need your permission now show their prompt.</li>
-<li>Boards have a larger stage, full screen, and @ references. Assets named in a board prompt travel with it, including boards created by agents.</li>
-<li>Image to Prompt adds Save As and Use actions to the result.</li>
-<li>Agent progress is easier to read: closed folders show a running dot, and the collapsed indicator rail uses symbols for finished and unsuccessful tasks.</li>
+<li>Browser agents can now fill Dax’s HTTP sign-in card using the same snapshot, type, click and keyboard tools they use on a page. You see the cursor move, the field light up and the characters arrive. Passwords stay masked and are never echoed in tool replies.</li>
+<li>Sign-in cards report rejected credentials, prevent partial passwords from being submitted while typing, and close when their page is stopped, replaced or closed.</li>
+<li>Waiting agents show a pulsing orange dot in the sidebar, aligned with the green running dots. Shared folder and collapsed-strip dots pulse too, including when an existing dot changes state.</li>
+<li>The new drawer_send_to_phone tool sends files or folders to your paired phone from file paths or File Drawer entries. Folders are zipped; each file may be up to 95 MB, with up to 20 inputs per request.</li>
+<li>Phone sends report acceptance by the Link, a pending retry, or the reason a file could not be sent. They use the existing outbox and can keep retrying for seven days. A phone must be paired.</li>
 </ul>
-<p><strong>On Dax 3.3 or earlier?</strong> Install this release once using the
-<a href="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.8.0/Dax.pkg">Dax installer</a>.
-It preserves your saved work and brings you straight to 3.8.0. macOS may ask you to approve replacement and grant permissions to the new app.</p>
+<p>Automatic updates introduced in 3.8 remain enabled by default and respect your setting.
+If you are on Dax 3.3 or earlier, <a href="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.8.5/Dax.pkg">install this release once</a> to move to the current app while keeping your saved work.</p>
 </body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.8.0/Dax.zip" length="128776647" type="application/octet-stream" sparkle:edSignature="znJuHWFMW2m83xcBBjCZDQaqCVjfFOMJlRa0khktueoVzjiOlu2ODC/IVz4f2eahzpsu4+RhafT4JVGrRQjEDQ=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.8.5/Dax.zip" length="128859409" type="application/octet-stream" sparkle:edSignature="0T+Q6PDEKkNu5oQlYfyNBLGEF+XATJSK57S+Jl0v2Vap3OoS4WMUXa0bU1JKBgLJC6w3IzzfRH+GnmWyBGS7AQ=="/>
         </item>
     </channel>
 </rss>
