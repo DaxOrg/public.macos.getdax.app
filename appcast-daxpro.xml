@@ -3,24 +3,27 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.7.0</title>
-            <pubDate>Wed, 04 Nov 2026 17:54:58 +0000</pubDate>
-            <sparkle:version>254</sparkle:version>
-            <sparkle:shortVersionString>3.7.0</sparkle:shortVersionString>
+            <title>3.8.0</title>
+            <pubDate>Fri, 06 Nov 2026 01:54:53 +0000</pubDate>
+            <sparkle:version>255</sparkle:version>
+            <sparkle:shortVersionString>3.8.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<!doctype html><html lang="en"><meta charset="utf-8"><title>Dax 3.7.0</title><body><h1>Dax 3.7.0</h1><ul>
-<li>Storyboards: explore a scene in pictures before you film it. Sketch story beats, compare versions, attach assets, then render the frames you like and turn them into footage.</li>
-<li>Send to phone: send any file or folder from your Mac to your iPhone’s Drawer from the phone button in Shepherd’s toolbar, by dropping it on that button, or from the File Drawer’s menu. It downloads in the background and opens in Quick Look.</li>
-<li>Indicators: agents show their progress live in a rail at the edge of the screen. Open it from the edge, drag it where you want it, and see the same progress on your iPhone.</li>
-<li>AI Video Assets has a window of its own: browse characters, props and locations in a grid, describe a new one with a camera or picture, and keep it in this project or make it global. Type @ in a scene’s prompt to pick one as you type, or let Dax spot the assets a prompt names.</li>
-<li>Finished AI Video clips and imported videos appear in your iPhone’s Clips. Mark a clip Final, edit a finished clip’s prompt, steer Enhance with a direction, and see how long each clip took.</li>
-<li>Dax’s agent tools start in a fraction of the time and memory: each one is a small helper that only wakes Dax when an agent uses it.</li>
-<li>A finished, paid clip is never lost to a network drop: Dax keeps fetching it until it lands.</li>
-<li>Your iPhone keeps showing this Mac’s agents when Shepherd is looking at a server, and can open a Mac’s recent projects.</li>
-<li>A take’s playback controls sit along the top of the recorder, and a peeked File Drawer tucks itself away if a drag’s release is missed.</li>
-</ul></body></html>
+            <description><![CDATA[<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Dax 3.8.0</title><body>
+<h1>Dax 3.8.0</h1>
+<ul>
+<li>Background updates now finish installing when your work windows are closed and the Mac is idle. Dax waits for active agents, recordings, uploads and generations, then lets the updater install and relaunch.</li>
+<li>Dax checks for the latest compatible release at launch and hourly when automatic updates are enabled. Updates that need your permission now show their prompt.</li>
+<li>Boards have a larger stage, full screen, and @ references. Assets named in a board prompt travel with it, including boards created by agents.</li>
+<li>Image to Prompt adds Save As and Use actions to the result.</li>
+<li>Agent progress is easier to read: closed folders show a running dot, and the collapsed indicator rail uses symbols for finished and unsuccessful tasks.</li>
+</ul>
+<p><strong>On Dax 3.3 or earlier?</strong> Install this release once using the
+<a href="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.8.0/Dax.pkg">Dax installer</a>.
+It preserves your saved work and brings you straight to 3.8.0. macOS may ask you to approve replacement and grant permissions to the new app.</p>
+</body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.7.0/Dax.zip" length="128510449" type="application/octet-stream" sparkle:edSignature="PgOo8yJdZFVZLg5TZMS0UEYnH/mcVZviWWy8ko2mXYbLK83B1e812bY5Tra00vB9SLXQLLaCvcJNvayzQXpmBQ=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.8.0/Dax.zip" length="128776647" type="application/octet-stream" sparkle:edSignature="znJuHWFMW2m83xcBBjCZDQaqCVjfFOMJlRa0khktueoVzjiOlu2ODC/IVz4f2eahzpsu4+RhafT4JVGrRQjEDQ=="/>
         </item>
     </channel>
 </rss>
