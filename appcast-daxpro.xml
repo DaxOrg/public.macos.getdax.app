@@ -3,24 +3,22 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.9.5</title>
-            <pubDate>Sat, 07 Nov 2026 14:56:03 +0000</pubDate>
-            <sparkle:version>259</sparkle:version>
-            <sparkle:shortVersionString>3.9.5</sparkle:shortVersionString>
+            <title>3.9.6</title>
+            <pubDate>Sat, 07 Nov 2026 16:23:12 +0000</pubDate>
+            <sparkle:version>260</sparkle:version>
+            <sparkle:shortVersionString>3.9.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!doctype html>
-<html lang="en"><meta charset="utf-8"><title>Dax 3.9.5</title><body>
-<h1>Dax 3.9.5</h1>
+<html lang="en"><meta charset="utf-8"><title>Dax 3.9.6</title><body>
+<h1>Dax 3.9.6</h1>
 <ul>
-<li>Fixes the “Invalid argument” error that could stop an upgrade while removing Dax’s previous background helper.</li>
-<li>Opening the new Dax silently replaces verified older copies and continues into the app. No replacement screen, confirmation, completion button or separate uninstaller is needed. macOS may still request administrator approval for protected items.</li>
-<li>Your projects, history, settings, saved secrets and coding-agent sessions are preserved. Replacement checks that cleanup finished before opening, and identifies the step if macOS prevents it from continuing.</li>
+<li>Schedules run at the right time in your time zone. Dax now reads the Mac’s own zone, so a schedule set for 2:57 PM runs at 2:57 PM, and Settings › Schedules › Time zone lets you pick another.</li>
+<li>Each scheduled run saves what happened as a transcript: every message and each tool call. Open it from the run’s row or its end card.</li>
+<li>New option: close the tab when a scheduled run finishes. It never closes a tab you’re looking at, and only closes once the transcript is saved.</li>
 </ul>
-<p><strong>On Dax 3.3 or earlier, or stuck during replacement?</strong> Install this release using the
-<a href="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.5/Dax.pkg">Dax installer</a>.</p>
 </body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.5/Dax.zip" length="130533216" type="application/octet-stream" sparkle:edSignature="OoJ6ziow9Aw5K08yh8B985JKIrzk0JVo0pMJTOZ4i5wegMFsGyXJerHUPdHA+7gk9OCVxRwgHdupTnTGPnn3Dw=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.6/Dax.zip" length="130665520" type="application/octet-stream" sparkle:edSignature="P6HBwQMBtmXma3kyQq+5XoVvPPcaQ7nWAAhxLuPN7VJhp4Y6fmcyDybiJYdz5Ikt/5/L3PQIZfhjHgmrzHhACA=="/>
         </item>
     </channel>
 </rss>
