@@ -3,29 +3,24 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.9.0</title>
-            <pubDate>Sat, 07 Nov 2026 09:07:50 +0000</pubDate>
-            <sparkle:version>257</sparkle:version>
-            <sparkle:shortVersionString>3.9.0</sparkle:shortVersionString>
+            <title>3.9.1</title>
+            <pubDate>Sat, 07 Nov 2026 12:23:20 +0000</pubDate>
+            <sparkle:version>258</sparkle:version>
+            <sparkle:shortVersionString>3.9.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!doctype html>
-<html lang="en"><meta charset="utf-8"><title>Dax 3.9.0</title><body>
-<h1>Dax 3.9.0</h1>
+<html lang="en"><meta charset="utf-8"><title>Dax 3.9.1</title><body>
+<h1>Dax 3.9.1</h1>
 <ul>
-<li><strong>Schedules:</strong> start an agent on a task at a time or on a repeat. Type it as a sentence, like “every weekday at 9 in Dax, run the tests”, and Dax reads the time, folder and agent for you. Schedules opens as a conversation or a Month, Week, Day and Year calendar with a now-line, grouped and coloured by folder.</li>
-<li><strong>OpenCode</strong> joins Shepherd with context, resume and Dax’s tools.</li>
-<li>Pair more than one iPhone or iPad with a Mac. Name or mute each device, choose which ones get notifications, send a file to just one, and ring a device to find it.</li>
-<li>Agents can create and run schedules, send to one device, ring a device, and remove a picture’s background.</li>
-<li>The “?” question badges and pills are gone from agent rows and panes. Real questions from dax-ask still arrive as cards.</li>
-<li>The recorder’s controls fade away when the pointer leaves them, and the herd sidebar keeps its width across collapse and relaunch.</li>
-<li>Fixes: the File Drawer puts its peek away when a drag lands elsewhere, Codex panes are matched more reliably, pairing retries a dropped connection, the update chime plays only when someone is at the Mac, and text on accent-coloured fills stays readable.</li>
+<li><strong>Dax Companion</strong>, the mobile app for Dax, is on the App Store for iPhone and iPad: <a href="https://apps.apple.com/app/dax-companion/id6828041761">get it here</a>, then pair from the phone at the bottom of the sidebar.</li>
+<li>No app on the phone yet? The pairing screen has a “Get Dax Companion” link that swaps in a code to open it on the App Store, and Settings › iPhone &amp; iPad links there too.</li>
 </ul>
 <p><strong>On Dax 3.3 or earlier?</strong> Install this release once using the
-<a href="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.0/Dax.pkg">Dax installer</a>.
-It preserves your saved work and brings you straight to 3.9.0.</p>
+<a href="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.1/Dax.pkg">Dax installer</a>.
+It preserves your saved work and brings you straight to 3.9.1.</p>
 </body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.0/Dax.zip" length="130545693" type="application/octet-stream" sparkle:edSignature="DpFLxDAMgvYDnJpwHMuoaIMfmlG1m5pYRR3RTLK3dUiCo/dtsyksiQuh4FdU1GIIciXiDBOs3aZuzaiDBpOrAg=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.1/Dax.zip" length="130563823" type="application/octet-stream" sparkle:edSignature="wIEnjzkGEyGPDjhWyTpcARFN/OB3eTIpOTbIOiJyDPIfzuKrz9BO4H0PhZbAuPja9HXuom8ukbusR7SnuPXUAQ=="/>
         </item>
     </channel>
 </rss>
