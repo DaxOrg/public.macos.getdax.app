@@ -3,24 +3,24 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.9.1</title>
-            <pubDate>Sat, 07 Nov 2026 12:23:20 +0000</pubDate>
-            <sparkle:version>258</sparkle:version>
-            <sparkle:shortVersionString>3.9.1</sparkle:shortVersionString>
+            <title>3.9.5</title>
+            <pubDate>Sat, 07 Nov 2026 14:56:03 +0000</pubDate>
+            <sparkle:version>259</sparkle:version>
+            <sparkle:shortVersionString>3.9.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!doctype html>
-<html lang="en"><meta charset="utf-8"><title>Dax 3.9.1</title><body>
-<h1>Dax 3.9.1</h1>
+<html lang="en"><meta charset="utf-8"><title>Dax 3.9.5</title><body>
+<h1>Dax 3.9.5</h1>
 <ul>
-<li><strong>Dax Companion</strong>, the mobile app for Dax, is on the App Store for iPhone and iPad: <a href="https://apps.apple.com/app/dax-companion/id6828041761">get it here</a>, then pair from the phone at the bottom of the sidebar.</li>
-<li>No app on the phone yet? The pairing screen has a “Get Dax Companion” link that swaps in a code to open it on the App Store, and Settings › iPhone &amp; iPad links there too.</li>
+<li>Fixes the “Invalid argument” error that could stop an upgrade while removing Dax’s previous background helper.</li>
+<li>Opening the new Dax silently replaces verified older copies and continues into the app. No replacement screen, confirmation, completion button or separate uninstaller is needed. macOS may still request administrator approval for protected items.</li>
+<li>Your projects, history, settings, saved secrets and coding-agent sessions are preserved. Replacement checks that cleanup finished before opening, and identifies the step if macOS prevents it from continuing.</li>
 </ul>
-<p><strong>On Dax 3.3 or earlier?</strong> Install this release once using the
-<a href="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.1/Dax.pkg">Dax installer</a>.
-It preserves your saved work and brings you straight to 3.9.1.</p>
+<p><strong>On Dax 3.3 or earlier, or stuck during replacement?</strong> Install this release using the
+<a href="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.5/Dax.pkg">Dax installer</a>.</p>
 </body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.1/Dax.zip" length="130563823" type="application/octet-stream" sparkle:edSignature="wIEnjzkGEyGPDjhWyTpcARFN/OB3eTIpOTbIOiJyDPIfzuKrz9BO4H0PhZbAuPja9HXuom8ukbusR7SnuPXUAQ=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.5/Dax.zip" length="130533216" type="application/octet-stream" sparkle:edSignature="OoJ6ziow9Aw5K08yh8B985JKIrzk0JVo0pMJTOZ4i5wegMFsGyXJerHUPdHA+7gk9OCVxRwgHdupTnTGPnn3Dw=="/>
         </item>
     </channel>
 </rss>
