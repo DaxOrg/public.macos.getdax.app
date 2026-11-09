@@ -3,24 +3,25 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.9.7</title>
-            <pubDate>Mon, 09 Nov 2026 18:18:49 +0000</pubDate>
-            <sparkle:version>261</sparkle:version>
-            <sparkle:shortVersionString>3.9.7</sparkle:shortVersionString>
+            <title>3.9.8</title>
+            <pubDate>Mon, 09 Nov 2026 22:10:06 +0000</pubDate>
+            <sparkle:version>262</sparkle:version>
+            <sparkle:shortVersionString>3.9.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!doctype html>
-<html lang="en"><meta charset="utf-8"><title>Dax 3.9.7</title><body>
-<h1>Dax 3.9.7</h1>
+<html lang="en"><meta charset="utf-8"><title>Dax 3.9.8</title><body>
+<h1>Dax 3.9.8</h1>
 <ul>
-<li>The camera and microphone work in released builds again. Dax now asks for them the first time you use them and appears in System Settings › Privacy &amp; Security, so you can turn them on.</li>
-<li>When a permission is on in System Settings but Dax still can’t use it, Dax now shows you what to do to fix it.</li>
-<li>Agents in the agent watcher are drawn as folder tiles.</li>
-<li>Redeem a code for free credits from the Credits panel.</li>
-<li>Updates after installing from the PKG now install without asking for your password.</li>
+<li>Control your Mac from your iPhone or iPad. With Dax Companion 1.3, the Mac page shows your screen live; tap it for full screen and use it like a trackpad, with clicks, drags, scrolling and typing. Turn it on in Settings › iPhone &amp; iPad.</li>
+<li>Unlock your Mac from your phone. When the Mac is locked, tap Unlock and confirm with Face ID; Dax types your password into the lock screen and shows a notice on the Mac. Off until you turn on “Let my devices unlock this Mac”.</li>
+<li>Free space from your phone: Dax finds build files, old temporary files, caches and the Trash, shows its progress as it goes, and clears what you pick.</li>
+<li>Keep awake is on by default and now stops the screen locking, not just the Mac sleeping.</li>
+<li>Tap Agents on your phone’s Mac page to bring Dax to the front.</li>
+<li>Agent Watch draws each folder in its herd’s colour.</li>
 </ul>
 </body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.7/Dax.zip" length="130886439" type="application/octet-stream" sparkle:edSignature="V8XZTx78+cGl3Wkglah1zgkvSGjmpQBf9U0LtZabQQNVK69emj4O2E4wjBm3/ccXgrhVKAniLrxhWWTBAxnRDQ=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.8/Dax.zip" length="130958611" type="application/octet-stream" sparkle:edSignature="iDLFhnZ8y0kGvEMuHg3GsZjli0RmO1oge/x95KJPMoqG1WEknbzcVIbdlrQMU0kGtSrRjF6RBQ/w15b2uhlCCA=="/>
         </item>
     </channel>
 </rss>
