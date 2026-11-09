@@ -3,22 +3,24 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.9.6</title>
-            <pubDate>Sat, 07 Nov 2026 16:23:12 +0000</pubDate>
-            <sparkle:version>260</sparkle:version>
-            <sparkle:shortVersionString>3.9.6</sparkle:shortVersionString>
+            <title>3.9.7</title>
+            <pubDate>Mon, 09 Nov 2026 18:18:49 +0000</pubDate>
+            <sparkle:version>261</sparkle:version>
+            <sparkle:shortVersionString>3.9.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!doctype html>
-<html lang="en"><meta charset="utf-8"><title>Dax 3.9.6</title><body>
-<h1>Dax 3.9.6</h1>
+<html lang="en"><meta charset="utf-8"><title>Dax 3.9.7</title><body>
+<h1>Dax 3.9.7</h1>
 <ul>
-<li>Schedules run at the right time in your time zone. Dax now reads the Mac’s own zone, so a schedule set for 2:57 PM runs at 2:57 PM, and Settings › Schedules › Time zone lets you pick another.</li>
-<li>Each scheduled run saves what happened as a transcript: every message and each tool call. Open it from the run’s row or its end card.</li>
-<li>New option: close the tab when a scheduled run finishes. It never closes a tab you’re looking at, and only closes once the transcript is saved.</li>
+<li>The camera and microphone work in released builds again. Dax now asks for them the first time you use them and appears in System Settings › Privacy &amp; Security, so you can turn them on.</li>
+<li>When a permission is on in System Settings but Dax still can’t use it, Dax now shows you what to do to fix it.</li>
+<li>Agents in the agent watcher are drawn as folder tiles.</li>
+<li>Redeem a code for free credits from the Credits panel.</li>
+<li>Updates after installing from the PKG now install without asking for your password.</li>
 </ul>
 </body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.6/Dax.zip" length="130665520" type="application/octet-stream" sparkle:edSignature="P6HBwQMBtmXma3kyQq+5XoVvPPcaQ7nWAAhxLuPN7VJhp4Y6fmcyDybiJYdz5Ikt/5/L3PQIZfhjHgmrzHhACA=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.7/Dax.zip" length="130886439" type="application/octet-stream" sparkle:edSignature="V8XZTx78+cGl3Wkglah1zgkvSGjmpQBf9U0LtZabQQNVK69emj4O2E4wjBm3/ccXgrhVKAniLrxhWWTBAxnRDQ=="/>
         </item>
     </channel>
 </rss>
