@@ -3,25 +3,27 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.9.9</title>
-            <pubDate>Tue, 10 Nov 2026 11:48:11 +0000</pubDate>
-            <sparkle:version>263</sparkle:version>
-            <sparkle:shortVersionString>3.9.9</sparkle:shortVersionString>
+            <title>3.9.10</title>
+            <pubDate>Thu, 12 Nov 2026 12:26:38 +0000</pubDate>
+            <sparkle:version>264</sparkle:version>
+            <sparkle:shortVersionString>3.9.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!doctype html>
-<html lang="en"><meta charset="utf-8"><title>Dax 3.9.9</title><body>
-<h1>Dax 3.9.9</h1>
+<html lang="en"><meta charset="utf-8"><title>Dax 3.9.10</title><body>
+<h1>Dax 3.9.10</h1>
 <ul>
-<li>Dax’s browser now presents itself as the latest Chrome, so sites serve their full pages. Switch to Safari, Firefox, Edge or a phone browser from the D button’s User agent tab.</li>
-<li>Closing a tab keeps you in the same folder: the next tab there, or the nearest folder above when it was the last one.</li>
-<li>The sidebar starts narrower, holds the width you drag it to, and starts collapsed on screens of 14 inches or smaller.</li>
-<li>Agent Watch and the Agent Monitor show each agent’s own logo.</li>
-<li>Slow AI images, such as GPT Image 2 with a reference picture, no longer time out.</li>
-<li>With Dax Companion 1.4: a bigger live Mac page on iPad, and a count on the phone’s Drawer of files you haven’t opened yet.</li>
+<li>Every screen on your Mac now reaches your iPhone and iPad. Swipe between them in Dax Companion 1.5; the one in view is live, and Settings draws them all as they’re arranged.</li>
+<li>The pairing code works with any camera. Scan it with an iPhone that doesn’t have Dax Companion yet and it takes you to the App Store, then straight into pairing. There’s no countdown to wait out.</li>
+<li>AI Video agents can start up to 128 clips an hour, as long as you have the credits. The count drops again as the hour moves on, instead of only going up.</li>
+<li>An agent’s failed renders come off the AI Video board, and each tab keeps one board and one player.</li>
+<li>Progress indicators stay up while their agent waits between turns.</li>
+<li>Scheduled Claude runs start in an explicit permission mode, so they don’t stop on a prompt nobody is there to answer.</li>
+<li>Sites behind Cloudflare’s check load in Dax’s browser again, and an agent’s browser closes once its Instagram video is saved.</li>
+<li>Full screen on the phone says what it’s waiting on before the Mac’s video starts.</li>
 </ul>
 </body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.9/Dax.zip" length="130996566" type="application/octet-stream" sparkle:edSignature="COGZ7D+oycz5c68/8r6/SRTv3fAw/ES4W01S5ccYz/kZMAX1OIxt0PyrNPk5NmuS62qCE7y7e/DKuFxZ5eHEDw=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.10/Dax.zip" length="131149334" type="application/octet-stream" sparkle:edSignature="uQNBxObf0aLNp1QSTdV7fLFW//NpavFi7hBHeTnPcgSexdoLv4SogUlgmjvB1qkF9GfrH3GXf60s4dntfbBiAw=="/>
         </item>
     </channel>
 </rss>
