@@ -3,27 +3,24 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.9.11</title>
-            <pubDate>Sat, 14 Nov 2026 22:00:06 +0000</pubDate>
-            <sparkle:version>265</sparkle:version>
-            <sparkle:shortVersionString>3.9.11</sparkle:shortVersionString>
+            <title>3.9.12</title>
+            <pubDate>Mon, 16 Nov 2026 10:08:18 +0000</pubDate>
+            <sparkle:version>266</sparkle:version>
+            <sparkle:shortVersionString>3.9.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!doctype html>
-<html lang="en"><meta charset="utf-8"><title>Dax 3.9.11</title><body>
-<h1>Dax 3.9.11</h1>
+<html lang="en"><meta charset="utf-8"><title>Dax 3.9.12</title><body>
+<h1>Dax 3.9.12</h1>
 <ul>
-<li>Talk to your agents from your iPhone. Dax Companion 1.6 listens, tidies what you said and sends it to the agent you picked. Your Mac goes quiet while you speak.</li>
-<li>Watch your Mac’s browser on the phone as live video. Tap and scroll it, or type into it. Switch to Reader for the phone’s own copy of the page.</li>
-<li>Hold an agent on the phone to bring its pane forward on the Mac. Close it, or speak a prompt to it, from the same menu.</li>
-<li>Agents can show you a file on a card with Quick View: an email draft, a diff, a PDF or pictures. Answer with a button. Pinch to zoom any card.</li>
-<li>The File Drawer is now the Shelf. Clips, Indicators and the AI Video queue moved into the Drawer at the foot of the sidebar. Clips play one at a time, and you swipe through them.</li>
-<li>Dax frees space from old worktrees on its own and tells you how much it freed.</li>
-<li>The phone lists every project your Mac has worked in. It also shows the AI Video queue, with Stop and Clear.</li>
-<li>Schedules run without asking for permission unless you pick otherwise. ⌘⇧-clicking a link asks where to open it when a browser is already up.</li>
+<li>Dax finds Codex, Claude Code and every other agent wherever you installed them. Agents installed with npm under nvm, fnm, volta or asdf, or added to your PATH in ~/.zshrc, now show up in New project. While Dax looks, the agent reads “Searching”; if it truly isn’t there you get Install and Locate….</li>
+<li>Hold Control-Shift to talk to a pane, and let go to send. On Pro, the Mac now dictates through Deepgram, the same as the phone.</li>
+<li>Agents show their plans as artifacts over a blurred screen, with Approve and Change. This works for Claude, Codex and any other agent.</li>
+<li>Settings › Appearance › Tab colour has a new “Same colour” choice: every tab and folder wears your accent.</li>
+<li>Dax Companion 1.7 floats a live picture of your Mac in a corner of the phone. Browser panes show their page title, favicon and tab count in the agent list.</li>
 </ul>
 </body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.11/Dax.zip" length="132492450" type="application/octet-stream" sparkle:edSignature="eVGbdf3HovWioAUS8L2qY0zKErGpy2odKX14LI7zTuGuvO4PInVhORxQG4iodZLldW4v5Lj/m2Mv9WE6D0ejDw=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.12/Dax.zip" length="133047352" type="application/octet-stream" sparkle:edSignature="nsaMuG3m15GmLpP/3+5zVkWKdBtimamJ3nnNJlEBqK4AsL6S7WiYIa7hrB7u1Zi5Gyzbrm3M/ze6KeTluDRJBg=="/>
         </item>
     </channel>
 </rss>
