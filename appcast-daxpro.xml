@@ -3,24 +3,25 @@
     <channel>
         <title>DaxPro</title>
         <item>
-            <title>3.9.12</title>
-            <pubDate>Mon, 16 Nov 2026 10:08:18 +0000</pubDate>
-            <sparkle:version>266</sparkle:version>
-            <sparkle:shortVersionString>3.9.12</sparkle:shortVersionString>
+            <title>3.10.0</title>
+            <pubDate>Tue, 17 Nov 2026 21:56:20 +0000</pubDate>
+            <sparkle:version>267</sparkle:version>
+            <sparkle:shortVersionString>3.10.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<!doctype html>
-<html lang="en"><meta charset="utf-8"><title>Dax 3.9.12</title><body>
-<h1>Dax 3.9.12</h1>
+<html lang="en"><meta charset="utf-8"><title>Dax 3.10.0</title><body>
+<h1>Dax 3.10.0</h1>
 <ul>
-<li>Dax finds Codex, Claude Code and every other agent wherever you installed them. Agents installed with npm under nvm, fnm, volta or asdf, or added to your PATH in ~/.zshrc, now show up in New project. While Dax looks, the agent reads “Searching”; if it truly isn’t there you get Install and Locate….</li>
-<li>Hold Control-Shift to talk to a pane, and let go to send. On Pro, the Mac now dictates through Deepgram, the same as the phone.</li>
-<li>Agents show their plans as artifacts over a blurred screen, with Approve and Change. This works for Claude, Codex and any other agent.</li>
-<li>Settings › Appearance › Tab colour has a new “Same colour” choice: every tab and folder wears your accent.</li>
-<li>Dax Companion 1.7 floats a live picture of your Mac in a corner of the phone. Browser panes show their page title, favicon and tab count in the agent list.</li>
+<li>Every Dax artifact now opens on your phone too. When an agent shows a plan or a Quick View card on the Mac, it also comes up over the Dax app on your phone. You can answer it on either device, and the first answer settles it. Artifacts are drawn dark, in Inter, and fit a phone screen. HTML files no longer show up in Times.</li>
+<li>When an agent asks a question, it now takes over the phone app. You can answer approvals from the phone, including the ones for secrets.</li>
+<li>The live screen is now a remote control. Switch between Picture mode (look and zoom) and Control mode, talk to paste words where your Mac’s cursor is, bring Dax to the front, type, upload a photo or file, or open the Mac’s controls. Turn the phone on its side and the tools move into a rail beside the screen, and the controls open in two columns.</li>
+<li>The mini Mac window on the Agents page can grow to half the screen, and tapping it opens the live screen.</li>
+<li>From your phone you can start any agent installed on your Mac, either in a new tab or in an existing one. Queued prompts now show in the agent list, and you can send one from an agent’s hold menu. Hold an agent to upload a file to it, and its progress shows on the agent screen.</li>
+<li>The Usage window now leads with how many credits you have left. When more than one copy of Dax is running, only one of them talks to your phone.</li>
 </ul>
 </body></html>
 ]]></description>
-            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.9.12/Dax.zip" length="133047352" type="application/octet-stream" sparkle:edSignature="nsaMuG3m15GmLpP/3+5zVkWKdBtimamJ3nnNJlEBqK4AsL6S7WiYIa7hrB7u1Zi5Gyzbrm3M/ze6KeTluDRJBg=="/>
+            <enclosure url="https://github.com/DaxOrg/public.macos.getdax.app/releases/download/v3.10.0/Dax.zip" length="133925090" type="application/octet-stream" sparkle:edSignature="5lATe3CqfSL1AR8d26fDj8C1UCu0/jNNQGCmJ7meH1btSgSRL2CZ2vBiWrItTDoXOOp4REkKxaES91Ct2uN3DA=="/>
         </item>
     </channel>
 </rss>
